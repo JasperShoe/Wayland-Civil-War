@@ -15,6 +15,7 @@
 		CBAEB5BF23999953009F054F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBAEB5BD23999953009F054F /* LaunchScreen.storyboard */; };
 		CBAEB5CA23999953009F054F /* Wayland_Civil_WarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEB5C923999953009F054F /* Wayland_Civil_WarTests.swift */; };
 		CBAEB5D523999953009F054F /* Wayland_Civil_WarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEB5D423999953009F054F /* Wayland_Civil_WarUITests.swift */; };
+		CBD2A9B323A01C0900E230F8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD2A9B223A01C0900E230F8 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		CBAEB5D023999953009F054F /* Wayland-Civil-WarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wayland-Civil-WarUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBAEB5D423999953009F054F /* Wayland_Civil_WarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wayland_Civil_WarUITests.swift; sourceTree = "<group>"; };
 		CBAEB5D623999953009F054F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBD2A9B223A01C0900E230F8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBD2A9B323A01C0900E230F8 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +86,7 @@
 				CBAEB5C823999953009F054F /* Wayland-Civil-WarTests */,
 				CBAEB5D323999953009F054F /* Wayland-Civil-WarUITests */,
 				CBAEB5B023999950009F054F /* Products */,
+				CBD2A9B123A01C0800E230F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +130,14 @@
 				CBAEB5D623999953009F054F /* Info.plist */,
 			);
 			path = "Wayland-Civil-WarUITests";
+			sourceTree = "<group>";
+		};
+		CBD2A9B123A01C0800E230F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBD2A9B223A01C0900E230F8 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
