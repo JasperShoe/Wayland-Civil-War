@@ -7,21 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		68BD905023A01AEB00A9EFD1 /* armalite.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 68BD904F23A01AEB00A9EFD1 /* armalite.ttf */; };
-		68BD905123A01AEB00A9EFD1 /* armalite.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 68BD904F23A01AEB00A9EFD1 /* armalite.ttf */; };
-		68BD905223A01AEB00A9EFD1 /* armalite.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 68BD904F23A01AEB00A9EFD1 /* armalite.ttf */; };
-		68BD907023A01FD200A9EFD1 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BD906F23A01FD200A9EFD1 /* Map.swift */; };
-		68BD907123A01FD200A9EFD1 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BD906F23A01FD200A9EFD1 /* Map.swift */; };
-		68BD907223A01FD200A9EFD1 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BD906F23A01FD200A9EFD1 /* Map.swift */; };
-		CB3FA79F23A4063100F66174 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB3FA79E23A4063100F66174 /* Main.storyboard */; };
 		CBAEB5B323999950009F054F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEB5B223999950009F054F /* AppDelegate.swift */; };
 		CBAEB5B523999950009F054F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEB5B423999950009F054F /* SceneDelegate.swift */; };
-		CBAEB5B723999950009F054F /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEB5B623999950009F054F /* Main.swift */; };
+		CBAEB5B723999950009F054F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEB5B623999950009F054F /* ViewController.swift */; };
+		CBAEB5BA23999950009F054F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBAEB5B823999950009F054F /* Main.storyboard */; };
 		CBAEB5BC23999953009F054F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBAEB5BB23999953009F054F /* Assets.xcassets */; };
 		CBAEB5BF23999953009F054F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBAEB5BD23999953009F054F /* LaunchScreen.storyboard */; };
 		CBAEB5CA23999953009F054F /* Wayland_Civil_WarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEB5C923999953009F054F /* Wayland_Civil_WarTests.swift */; };
 		CBAEB5D523999953009F054F /* Wayland_Civil_WarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEB5D423999953009F054F /* Wayland_Civil_WarUITests.swift */; };
-		CBD2A9B323A01C0900E230F8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD2A9B223A01C0900E230F8 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,13 +35,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		68BD904F23A01AEB00A9EFD1 /* armalite.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = armalite.ttf; sourceTree = "<group>"; };
-		68BD906F23A01FD200A9EFD1 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
-		CB3FA79E23A4063100F66174 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../Main.storyboard; sourceTree = "<group>"; };
 		CBAEB5AF23999950009F054F /* Wayland-Civil-War.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wayland-Civil-War.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBAEB5B223999950009F054F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBAEB5B423999950009F054F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CBAEB5B623999950009F054F /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		CBAEB5B623999950009F054F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CBAEB5B923999950009F054F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBAEB5BB23999953009F054F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBAEB5BE23999953009F054F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBAEB5C023999953009F054F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,7 +49,6 @@
 		CBAEB5D023999953009F054F /* Wayland-Civil-WarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wayland-Civil-WarUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBAEB5D423999953009F054F /* Wayland_Civil_WarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wayland_Civil_WarUITests.swift; sourceTree = "<group>"; };
 		CBAEB5D623999953009F054F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CBD2A9B223A01C0900E230F8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +56,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBD2A9B323A01C0900E230F8 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,14 +76,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		68BD904E23A01A9D00A9EFD1 /* font */ = {
-			isa = PBXGroup;
-			children = (
-				68BD904F23A01AEB00A9EFD1 /* armalite.ttf */,
-			);
-			path = font;
-			sourceTree = "<group>";
-		};
 		CBAEB5A623999950009F054F = {
 			isa = PBXGroup;
 			children = (
@@ -102,7 +83,6 @@
 				CBAEB5C823999953009F054F /* Wayland-Civil-WarTests */,
 				CBAEB5D323999953009F054F /* Wayland-Civil-WarUITests */,
 				CBAEB5B023999950009F054F /* Products */,
-				CBD2A9B123A01C0800E230F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,12 +99,10 @@
 		CBAEB5B123999950009F054F /* Wayland-Civil-War */ = {
 			isa = PBXGroup;
 			children = (
-				68BD904E23A01A9D00A9EFD1 /* font */,
 				CBAEB5B223999950009F054F /* AppDelegate.swift */,
 				CBAEB5B423999950009F054F /* SceneDelegate.swift */,
-				CBAEB5B623999950009F054F /* Main.swift */,
-				CB3FA79E23A4063100F66174 /* Main.storyboard */,
-				68BD906F23A01FD200A9EFD1 /* Map.swift */,
+				CBAEB5B623999950009F054F /* ViewController.swift */,
+				CBAEB5B823999950009F054F /* Main.storyboard */,
 				CBAEB5BB23999953009F054F /* Assets.xcassets */,
 				CBAEB5BD23999953009F054F /* LaunchScreen.storyboard */,
 				CBAEB5C023999953009F054F /* Info.plist */,
@@ -148,14 +126,6 @@
 				CBAEB5D623999953009F054F /* Info.plist */,
 			);
 			path = "Wayland-Civil-WarUITests";
-			sourceTree = "<group>";
-		};
-		CBD2A9B123A01C0800E230F8 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CBD2A9B223A01C0900E230F8 /* MapKit.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,8 +234,7 @@
 			files = (
 				CBAEB5BF23999953009F054F /* LaunchScreen.storyboard in Resources */,
 				CBAEB5BC23999953009F054F /* Assets.xcassets in Resources */,
-				68BD905023A01AEB00A9EFD1 /* armalite.ttf in Resources */,
-				CB3FA79F23A4063100F66174 /* Main.storyboard in Resources */,
+				CBAEB5BA23999950009F054F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +242,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68BD905123A01AEB00A9EFD1 /* armalite.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +249,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68BD905223A01AEB00A9EFD1 /* armalite.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,9 +259,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBAEB5B723999950009F054F /* Main.swift in Sources */,
+				CBAEB5B723999950009F054F /* ViewController.swift in Sources */,
 				CBAEB5B323999950009F054F /* AppDelegate.swift in Sources */,
-				68BD907023A01FD200A9EFD1 /* Map.swift in Sources */,
 				CBAEB5B523999950009F054F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,7 +269,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68BD907123A01FD200A9EFD1 /* Map.swift in Sources */,
 				CBAEB5CA23999953009F054F /* Wayland_Civil_WarTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,7 +277,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68BD907223A01FD200A9EFD1 /* Map.swift in Sources */,
 				CBAEB5D523999953009F054F /* Wayland_Civil_WarUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,6 +297,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		CBAEB5B823999950009F054F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBAEB5B923999950009F054F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		CBAEB5BD23999953009F054F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
