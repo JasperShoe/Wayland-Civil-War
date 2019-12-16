@@ -6,41 +6,35 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="armalite.ttf">
-            <string>ArmaliteRifle</string>
-        </array>
-    </customFonts>
     <scenes>
-        <!--Main-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Main" id="BYZ-38-t0r" customClass="ViewController" customModule="Wayland_Civil_War" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Wayland_Civil_War" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wayland" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJH-S7-fV0">
-                                <rect key="frame" x="97" y="181" width="220" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ArmaliteRifle" family="Armalite Rifle" pointSize="50"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Civil War" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="del-p3-Vob">
-                                <rect key="frame" x="106" y="245" width="202" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ArmaliteRifle" family="Armalite Rifle" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ysM-tG-FOf">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                            </mapView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ysM-tG-FOf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Cqc-0q-5vt"/>
+                            <constraint firstItem="ysM-tG-FOf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TDx-75-Rvn"/>
+                            <constraint firstItem="ysM-tG-FOf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kAj-jx-f52"/>
+                            <constraint firstAttribute="bottom" secondItem="ysM-tG-FOf" secondAttribute="bottom" id="mtY-sh-BJ8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="ysM-tG-FOf" id="7ND-RD-rcL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
         </scene>
         <!--Map-->
@@ -91,6 +85,9 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EMe-Z0-hzB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="779.46428571428567"/>
+=======
+            <point key="canvasLocation" x="140.57971014492756" y="115.84821428571428"/>
+>>>>>>> 9757d85539d786b1ef468eca40d83b2c62414708
         </scene>
     </scenes>
     <resources>
