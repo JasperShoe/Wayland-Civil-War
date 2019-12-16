@@ -50,13 +50,51 @@
                     <view key="view" contentMode="scaleToFill" id="fdR-E9-GXW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFc-I0-drL">
+                                <rect key="frame" x="349" y="59" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7C5-rt-64z"/>
+                                    <constraint firstAttribute="width" constant="50" id="l4Z-C0-m6D"/>
+                                </constraints>
+                                <state key="normal" title="Settings " image="SettingsIcon"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i32-Q7-pFA">
+                                <rect key="frame" x="15" y="66" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="FIt-kg-9k1"/>
+                                    <constraint firstAttribute="height" constant="40" id="asg-RK-YmZ"/>
+                                </constraints>
+                                <state key="normal" title="Chat" image="ChatIcon"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4je-hz-WUr">
+                                <rect key="frame" x="0.0" y="792" width="414" height="70"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="TKB-fh-7vY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ALJ-FD-dIz" firstAttribute="trailing" secondItem="UFc-I0-drL" secondAttribute="trailing" constant="15" id="9ZO-6f-abR"/>
+                            <constraint firstItem="i32-Q7-pFA" firstAttribute="leading" secondItem="ALJ-FD-dIz" secondAttribute="leading" constant="15" id="E0d-ja-dUR"/>
+                            <constraint firstItem="i32-Q7-pFA" firstAttribute="top" secondItem="ALJ-FD-dIz" secondAttribute="top" constant="22" id="MQ3-OV-tU1"/>
+                            <constraint firstItem="4je-hz-WUr" firstAttribute="leading" secondItem="ALJ-FD-dIz" secondAttribute="leading" id="Mo7-5y-ETa"/>
+                            <constraint firstItem="ALJ-FD-dIz" firstAttribute="trailing" secondItem="4je-hz-WUr" secondAttribute="trailing" id="WK1-3v-iV5"/>
+                            <constraint firstItem="UFc-I0-drL" firstAttribute="top" secondItem="ALJ-FD-dIz" secondAttribute="top" constant="15" id="e95-Ci-coA"/>
+                            <constraint firstItem="4je-hz-WUr" firstAttribute="bottom" secondItem="ALJ-FD-dIz" secondAttribute="bottom" id="qPN-ru-hm3"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ALJ-FD-dIz"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EMe-Z0-hzB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="780"/>
+            <point key="canvasLocation" x="137.68115942028987" y="779.46428571428567"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ChatIcon" width="920" height="960"/>
+        <image name="SettingsIcon" width="256" height="256"/>
+    </resources>
 </document>
