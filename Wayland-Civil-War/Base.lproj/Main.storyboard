@@ -34,7 +34,6 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
             <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
         </scene>
         <!--Map-->
@@ -85,13 +84,84 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EMe-Z0-hzB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="779.46428571428567"/>
-=======
-            <point key="canvasLocation" x="140.57971014492756" y="115.84821428571428"/>
->>>>>>> 9757d85539d786b1ef468eca40d83b2c62414708
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bmz-Nh-GGh">
+            <objects>
+                <viewController id="ZUt-PW-jf7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="19Y-Bc-a9U">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="person.crop.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="w9G-O5-Ejl">
+                                <rect key="frame" x="94" y="50.5" width="227" height="238"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1j-jI-8P7">
+                                <rect key="frame" x="152" y="289" width="110" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="lZc-EN-16g"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9n3-AD-3S7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1636" y="113"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pWa-pB-5vh">
+            <objects>
+                <viewController id="sKz-Cr-sqf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gwR-hn-KUO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ctw-9c-ggj">
+                                <rect key="frame" x="-3" y="53" width="208" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Live Chat" id="wBV-4y-rlq">
+                                        <barButtonItem key="rightBarButtonItem" image="text.bubble" catalog="system" id="6ZR-Vn-Xpo"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qOS-6a-EWU">
+                                <rect key="frame" x="205" y="53" width="209" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Team Mail" id="4eI-MK-0b5">
+                                        <barButtonItem key="rightBarButtonItem" image="envelope.badge.fill" catalog="system" id="MrE-sa-mRb"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Enter Message" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xM8-Pa-nXv">
+                                <rect key="frame" x="117" y="758" width="180" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="tdx-dU-zIq"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Oj-6V-yR2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="894" y="113"/>
         </scene>
     </scenes>
     <resources>
         <image name="ChatIcon" width="920" height="960"/>
         <image name="SettingsIcon" width="256" height="256"/>
+        <image name="envelope.badge.fill" catalog="system" width="64" height="48"/>
+        <image name="person.crop.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="text.bubble" catalog="system" width="64" height="54"/>
     </resources>
 </document>
