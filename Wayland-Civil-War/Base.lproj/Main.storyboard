@@ -186,13 +186,13 @@
             </objects>
             <point key="canvasLocation" x="894" y="113"/>
         </scene>
-        <!--LoginView-->
+        <!--LoadView-->
         <scene sceneID="n5B-kn-OXZ">
             <objects>
-                <viewController title="LoginView" modalPresentationStyle="fullScreen" id="gsd-J8-VrA" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Nan-DJ-8Is">
+                <viewController storyboardIdentifier="LoadingScreen" title="LoadView" modalPresentationStyle="fullScreen" id="gsd-J8-VrA" customClass="LoadingScreenViewController" customModule="Wayland_Civil_War" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFit" id="Nan-DJ-8Is">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="w.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="om6-cI-MSH">
                                 <rect key="frame" x="82" y="137.5" width="250" height="183"/>
@@ -204,11 +204,12 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JdP-k0-EDM">
                                 <rect key="frame" x="82" y="528" width="250" height="75"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="JQR-YN-uIK"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" title="Play">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -216,19 +217,30 @@
                                     <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="WNl-2r-9bT" kind="presentation" id="DDB-G1-QHv"/>
+                                    <segue destination="WNl-2r-9bT" kind="presentation" id="Qjg-7d-BqV"/>
                                 </connections>
                             </button>
+                            <progressView autoresizesSubviews="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="HxK-35-wkU">
+                                <rect key="frame" x="82" y="686" width="250" height="26"/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="8dd-Ok-J9A"/>
+                                </constraints>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
                             <constraint firstItem="om6-cI-MSH" firstAttribute="leading" secondItem="JdP-k0-EDM" secondAttribute="leading" id="AI3-IE-44K"/>
+                            <constraint firstItem="HxK-35-wkU" firstAttribute="leading" secondItem="JdP-k0-EDM" secondAttribute="leading" id="DcT-n6-2J1"/>
+                            <constraint firstItem="Zf7-Pu-cGv" firstAttribute="bottom" secondItem="HxK-35-wkU" secondAttribute="bottom" constant="151.5" id="Gxo-Pd-TRe"/>
                             <constraint firstItem="om6-cI-MSH" firstAttribute="leading" secondItem="Zf7-Pu-cGv" secondAttribute="leading" constant="82" id="Hdc-fA-V1u"/>
                             <constraint firstItem="om6-cI-MSH" firstAttribute="centerX" secondItem="Nan-DJ-8Is" secondAttribute="centerX" id="JMb-kf-59E"/>
                             <constraint firstItem="om6-cI-MSH" firstAttribute="trailing" secondItem="JdP-k0-EDM" secondAttribute="trailing" id="K63-Nt-VtN"/>
+                            <constraint firstItem="HxK-35-wkU" firstAttribute="trailing" secondItem="JdP-k0-EDM" secondAttribute="trailing" id="MGw-2X-TLz"/>
                             <constraint firstItem="om6-cI-MSH" firstAttribute="top" secondItem="Zf7-Pu-cGv" secondAttribute="top" constant="93" id="SdQ-v6-Fef"/>
                             <constraint firstItem="Zf7-Pu-cGv" firstAttribute="bottom" secondItem="JdP-k0-EDM" secondAttribute="bottom" constant="259" id="mpA-i3-aGy"/>
                         </constraints>
@@ -237,12 +249,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ne-Hs-E9O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="-696"/>
+            <point key="canvasLocation" x="0.0" y="-696.42857142857144"/>
         </scene>
-        <!--View Controller-->
+        <!--LoginView-->
         <scene sceneID="wcx-Zy-Cv6">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="WNl-2r-9bT" sceneMemberID="viewController">
+                <viewController title="LoginView" modalPresentationStyle="fullScreen" id="WNl-2r-9bT" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HxS-nh-HrZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -258,7 +270,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uCh-qt-tbT">
                                 <rect key="frame" x="82" y="431" width="250" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hgT-nK-vSa">
                                 <rect key="frame" x="82" y="516" width="250" height="34"/>
@@ -266,10 +278,11 @@
                                     <constraint firstAttribute="height" constant="34" id="8HF-Ei-cYo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbN-nw-fuz">
                                 <rect key="frame" x="82" y="608" width="250" height="75"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Login">
@@ -279,7 +292,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
                                     <segue destination="s30-lV-lch" kind="presentation" id="cyz-vl-8ao"/>
