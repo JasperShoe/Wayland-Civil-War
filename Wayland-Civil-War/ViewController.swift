@@ -42,14 +42,9 @@ class ViewController: UIViewController {
         //Custom pins/Landmarks
         var landmarks: [customPin] = []
         var landmarkTitles: [String] = ["Town Hall", "Claypit Hill", "Happy Hollow"]
-        var landmarkSubTitles: [String] = ["Capital of Wayland", "Northie Children Hub", "Artur Went To School Here xD"]
+        var landmarkSubTitles: [String] = ["Capital of Wayland", "East of the Mississippi", "*Some Funny Reference*"]
         var landmarkLocation: [CLLocationCoordinate2D] = [CLLocationCoordinate2D(latitude: 42.361400, longitude: -71.361549), CLLocationCoordinate2D(latitude: 42.373079, longitude: -71.344808), CLLocationCoordinate2D(latitude: 42.337595, longitude: -71.369744)]
                         
-        print(landmarkTitles.count)
-        print(landmarkSubTitles.count)
-        print(landmarkLocation.count)
-
-        
         for n in 0...landmarkTitles.count-1 {
             landmarks.append(customPin(pinTitle: landmarkTitles[n], pinSubTitle: landmarkSubTitles[n], location: landmarkLocation[n]))
         }
