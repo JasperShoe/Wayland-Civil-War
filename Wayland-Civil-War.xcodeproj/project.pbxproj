@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0F4F1FED23AD424C0062DFF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F4F1FEC23AD424C0062DFF6 /* Main.storyboard */; };
+		2A65DFACEF1E872D3C00A9F6 /* Pods_Wayland_Civil_War.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FEC04BFC1FBCB95769C6434 /* Pods_Wayland_Civil_War.framework */; };
+		4F463598BFD8315E637F972B /* Pods_Wayland_Civil_WarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA884F5FB2AD2F1364DD0358 /* Pods_Wayland_Civil_WarTests.framework */; };
 		6886631423ABF2E30040E200 /* LoadingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6886631323ABF2E30040E200 /* LoadingScreenViewController.swift */; };
 		6A56DE5D23AD8C29008A0C8F /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A56DE5C23AD8C29008A0C8F /* GoogleService-Info (1).plist */; };
+		75F905A8F216CF59B0E96C94 /* Pods_Wayland_Civil_War_Wayland_Civil_WarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB485629477EBE9B025D6D46 /* Pods_Wayland_Civil_War_Wayland_Civil_WarUITests.framework */; };
 		CBAEB5B323999950009F054F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEB5B223999950009F054F /* AppDelegate.swift */; };
 		CBAEB5B523999950009F054F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEB5B423999950009F054F /* SceneDelegate.swift */; };
 		CBAEB5B723999950009F054F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEB5B623999950009F054F /* MapViewController.swift */; };
@@ -37,9 +40,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08C8E2AD035FE334B3C3813A /* Pods-Wayland-Civil-War.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wayland-Civil-War.debug.xcconfig"; path = "Target Support Files/Pods-Wayland-Civil-War/Pods-Wayland-Civil-War.debug.xcconfig"; sourceTree = "<group>"; };
 		0F4F1FEC23AD424C0062DFF6 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1FEC04BFC1FBCB95769C6434 /* Pods_Wayland_Civil_War.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wayland_Civil_War.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CD2DA89735603B009DA8779 /* Pods-Wayland-Civil-War.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wayland-Civil-War.release.xcconfig"; path = "Target Support Files/Pods-Wayland-Civil-War/Pods-Wayland-Civil-War.release.xcconfig"; sourceTree = "<group>"; };
+		588F84473667BD93B9921717 /* Pods-Wayland-Civil-WarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wayland-Civil-WarTests.debug.xcconfig"; path = "Target Support Files/Pods-Wayland-Civil-WarTests/Pods-Wayland-Civil-WarTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6886631323ABF2E30040E200 /* LoadingScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreenViewController.swift; sourceTree = "<group>"; };
+		694A90EF0511891AA1CAEF11 /* Pods-Wayland-Civil-War-Wayland-Civil-WarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wayland-Civil-War-Wayland-Civil-WarUITests.release.xcconfig"; path = "Target Support Files/Pods-Wayland-Civil-War-Wayland-Civil-WarUITests/Pods-Wayland-Civil-War-Wayland-Civil-WarUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6A56DE5C23AD8C29008A0C8F /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
+		BA884F5FB2AD2F1364DD0358 /* Pods_Wayland_Civil_WarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wayland_Civil_WarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBAEB5AF23999950009F054F /* Wayland-Civil-War.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wayland-Civil-War.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBAEB5B223999950009F054F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBAEB5B423999950009F054F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +62,9 @@
 		CBAEB5D023999953009F054F /* Wayland-Civil-WarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wayland-Civil-WarUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBAEB5D423999953009F054F /* Wayland_Civil_WarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wayland_Civil_WarUITests.swift; sourceTree = "<group>"; };
 		CBAEB5D623999953009F054F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5C33796BF9C6CB0A5F37622 /* Pods-Wayland-Civil-War-Wayland-Civil-WarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wayland-Civil-War-Wayland-Civil-WarUITests.debug.xcconfig"; path = "Target Support Files/Pods-Wayland-Civil-War-Wayland-Civil-WarUITests/Pods-Wayland-Civil-War-Wayland-Civil-WarUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F4051EF0AD356524E0D0F963 /* Pods-Wayland-Civil-WarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wayland-Civil-WarTests.release.xcconfig"; path = "Target Support Files/Pods-Wayland-Civil-WarTests/Pods-Wayland-Civil-WarTests.release.xcconfig"; sourceTree = "<group>"; };
+		FB485629477EBE9B025D6D46 /* Pods_Wayland_Civil_War_Wayland_Civil_WarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wayland_Civil_War_Wayland_Civil_WarUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A65DFACEF1E872D3C00A9F6 /* Pods_Wayland_Civil_War.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F463598BFD8315E637F972B /* Pods_Wayland_Civil_WarTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +88,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75F905A8F216CF59B0E96C94 /* Pods_Wayland_Civil_War_Wayland_Civil_WarUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		737BB7E615C7908DD1011BAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FEC04BFC1FBCB95769C6434 /* Pods_Wayland_Civil_War.framework */,
+				FB485629477EBE9B025D6D46 /* Pods_Wayland_Civil_War_Wayland_Civil_WarUITests.framework */,
+				BA884F5FB2AD2F1364DD0358 /* Pods_Wayland_Civil_WarTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A545E10A63CED47B14843DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08C8E2AD035FE334B3C3813A /* Pods-Wayland-Civil-War.debug.xcconfig */,
+				3CD2DA89735603B009DA8779 /* Pods-Wayland-Civil-War.release.xcconfig */,
+				D5C33796BF9C6CB0A5F37622 /* Pods-Wayland-Civil-War-Wayland-Civil-WarUITests.debug.xcconfig */,
+				694A90EF0511891AA1CAEF11 /* Pods-Wayland-Civil-War-Wayland-Civil-WarUITests.release.xcconfig */,
+				588F84473667BD93B9921717 /* Pods-Wayland-Civil-WarTests.debug.xcconfig */,
+				F4051EF0AD356524E0D0F963 /* Pods-Wayland-Civil-WarTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CBAEB5A623999950009F054F = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +126,8 @@
 				CBAEB5C823999953009F054F /* Wayland-Civil-WarTests */,
 				CBAEB5D323999953009F054F /* Wayland-Civil-WarUITests */,
 				CBAEB5B023999950009F054F /* Products */,
+				9A545E10A63CED47B14843DB /* Pods */,
+				737BB7E615C7908DD1011BAA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,9 +182,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CBAEB5D923999953009F054F /* Build configuration list for PBXNativeTarget "Wayland-Civil-War" */;
 			buildPhases = (
+				318C711E723F878B16953BE5 /* [CP] Check Pods Manifest.lock */,
 				CBAEB5AB23999950009F054F /* Sources */,
 				CBAEB5AC23999950009F054F /* Frameworks */,
 				CBAEB5AD23999950009F054F /* Resources */,
+				592C5AA289B0044A2D6DD38A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -158,6 +201,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CBAEB5DC23999953009F054F /* Build configuration list for PBXNativeTarget "Wayland-Civil-WarTests" */;
 			buildPhases = (
+				D95995E7B57737DE03AD71DE /* [CP] Check Pods Manifest.lock */,
 				CBAEB5C123999953009F054F /* Sources */,
 				CBAEB5C223999953009F054F /* Frameworks */,
 				CBAEB5C323999953009F054F /* Resources */,
@@ -176,9 +220,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CBAEB5DF23999953009F054F /* Build configuration list for PBXNativeTarget "Wayland-Civil-WarUITests" */;
 			buildPhases = (
+				3ACE4B0FC5E7D752572847EE /* [CP] Check Pods Manifest.lock */,
 				CBAEB5CC23999953009F054F /* Sources */,
 				CBAEB5CD23999953009F054F /* Frameworks */,
 				CBAEB5CE23999953009F054F /* Resources */,
+				8D5D15E0888B6F7E850F7993 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -260,6 +306,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		318C711E723F878B16953BE5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wayland-Civil-War-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3ACE4B0FC5E7D752572847EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wayland-Civil-War-Wayland-Civil-WarUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		592C5AA289B0044A2D6DD38A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wayland-Civil-War/Pods-Wayland-Civil-War-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wayland-Civil-War/Pods-Wayland-Civil-War-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wayland-Civil-War/Pods-Wayland-Civil-War-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D5D15E0888B6F7E850F7993 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wayland-Civil-War-Wayland-Civil-WarUITests/Pods-Wayland-Civil-War-Wayland-Civil-WarUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wayland-Civil-War-Wayland-Civil-WarUITests/Pods-Wayland-Civil-War-Wayland-Civil-WarUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wayland-Civil-War-Wayland-Civil-WarUITests/Pods-Wayland-Civil-War-Wayland-Civil-WarUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D95995E7B57737DE03AD71DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wayland-Civil-WarTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CBAEB5AB23999950009F054F /* Sources */ = {
@@ -432,6 +581,7 @@
 		};
 		CBAEB5DA23999953009F054F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08C8E2AD035FE334B3C3813A /* Pods-Wayland-Civil-War.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +600,7 @@
 		};
 		CBAEB5DB23999953009F054F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CD2DA89735603B009DA8779 /* Pods-Wayland-Civil-War.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +619,7 @@
 		};
 		CBAEB5DD23999953009F054F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 588F84473667BD93B9921717 /* Pods-Wayland-Civil-WarTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -489,6 +641,7 @@
 		};
 		CBAEB5DE23999953009F054F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4051EF0AD356524E0D0F963 /* Pods-Wayland-Civil-WarTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +663,7 @@
 		};
 		CBAEB5E023999953009F054F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5C33796BF9C6CB0A5F37622 /* Pods-Wayland-Civil-War-Wayland-Civil-WarUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -529,6 +683,7 @@
 		};
 		CBAEB5E123999953009F054F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 694A90EF0511891AA1CAEF11 /* Pods-Wayland-Civil-War-Wayland-Civil-WarUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
