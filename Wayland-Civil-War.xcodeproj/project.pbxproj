@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F4F1FED23AD424C0062DFF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F4F1FEC23AD424C0062DFF6 /* Main.storyboard */; };
 		6886631423ABF2E30040E200 /* LoadingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6886631323ABF2E30040E200 /* LoadingScreenViewController.swift */; };
 		CBAEB5B323999950009F054F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEB5B223999950009F054F /* AppDelegate.swift */; };
 		CBAEB5B523999950009F054F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEB5B423999950009F054F /* SceneDelegate.swift */; };
 		CBAEB5B723999950009F054F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEB5B623999950009F054F /* ViewController.swift */; };
-		CBAEB5BA23999950009F054F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBAEB5B823999950009F054F /* Main.storyboard */; };
 		CBAEB5BC23999953009F054F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBAEB5BB23999953009F054F /* Assets.xcassets */; };
 		CBAEB5BF23999953009F054F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBAEB5BD23999953009F054F /* LaunchScreen.storyboard */; };
 		CBAEB5CA23999953009F054F /* Wayland_Civil_WarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEB5C923999953009F054F /* Wayland_Civil_WarTests.swift */; };
@@ -36,12 +36,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F4F1FEC23AD424C0062DFF6 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		6886631323ABF2E30040E200 /* LoadingScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreenViewController.swift; sourceTree = "<group>"; };
 		CBAEB5AF23999950009F054F /* Wayland-Civil-War.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wayland-Civil-War.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBAEB5B223999950009F054F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBAEB5B423999950009F054F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CBAEB5B623999950009F054F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CBAEB5B923999950009F054F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBAEB5BB23999953009F054F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBAEB5BE23999953009F054F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBAEB5C023999953009F054F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -104,8 +104,8 @@
 				CBAEB5B223999950009F054F /* AppDelegate.swift */,
 				CBAEB5B423999950009F054F /* SceneDelegate.swift */,
 				CBAEB5B623999950009F054F /* ViewController.swift */,
-				CBAEB5B823999950009F054F /* Main.storyboard */,
 				6886631323ABF2E30040E200 /* LoadingScreenViewController.swift */,
+				0F4F1FEC23AD424C0062DFF6 /* Main.storyboard */,
 				CBAEB5BB23999953009F054F /* Assets.xcassets */,
 				CBAEB5BD23999953009F054F /* LaunchScreen.storyboard */,
 				CBAEB5C023999953009F054F /* Info.plist */,
@@ -235,9 +235,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F4F1FED23AD424C0062DFF6 /* Main.storyboard in Resources */,
 				CBAEB5BF23999953009F054F /* LaunchScreen.storyboard in Resources */,
 				CBAEB5BC23999953009F054F /* Assets.xcassets in Resources */,
-				CBAEB5BA23999950009F054F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +301,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CBAEB5B823999950009F054F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CBAEB5B923999950009F054F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CBAEB5BD23999953009F054F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
