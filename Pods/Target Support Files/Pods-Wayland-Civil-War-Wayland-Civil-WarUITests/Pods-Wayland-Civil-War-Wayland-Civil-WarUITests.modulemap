@@ -1,0 +1,6 @@
+framework module Pods_Wayland_Civil_War_Wayland_Civil_WarUITests {
+  umbrella header "Pods-Wayland-Civil-War-Wayland-Civil-WarUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
