@@ -21,7 +21,7 @@ class customPin: NSObject, MKAnnotation {
     }
 }
 
-class ViewController: UIViewController {
+class MapViewController: UIViewController {
     let locationManager = CLLocationManager()
     
     @IBOutlet weak var mapView: MKMapView!
@@ -55,6 +55,6 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: CLLocationManagerDelegate {
+extension MapViewController: CLLocationManagerDelegate {
 
 }
