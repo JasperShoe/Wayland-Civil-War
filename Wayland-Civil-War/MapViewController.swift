@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import MapKitGoogleStyler
 
 class customPin: NSObject, MKAnnotation {
     var coordinate: CLLocationCoordinate2D
@@ -53,6 +54,35 @@ class MapViewController: UIViewController {
             mapView.addAnnotation(landmark)
         }
     }
+    private func configureTileOverlay() {
+            // We first need to have the path of the overlay configuration JSON
+            guard let overlayFileURLString = Bundle.main.path(forResource: "overlay", ofType: "json") else {
+                    return
+            }
+            let overlayFileURL = URL(fileURLWithPath: overlayFileURLString)
+            
+            // After that, you can create the tile overlay using MapKitGoogleStyler
+            guard let tileOverlay = try? MapKitGoogleStyler.buildOverlay(with: overlayFileURL) else {
+                return
+            }
+            
+            // And finally add it to your MKMapView
+            mapView.add(tileOverlay)
+        }
+        
+    }
+
+    extension MapViewController: MKMapViewDelegate {
+        func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+            // This is the final step. This code can be copied and pasted into your project
+            // without thinking on it so much. It simply instantiates a MKTileOverlayRenderer
+            // for displaying the tile overlay.
+            if let tileOverlay = overlay as? MKTileOverlay {
+                return MKTileOverlayRenderer(tileOverlay: tileOverlay)
+            } else {
+                return MKOverlayRenderer(overlay: overlay)
+            }
+        }
 }
 
 extension MapViewController: CLLocationManagerDelegate {
