@@ -42,9 +42,9 @@ class MapViewController: UIViewController {
         
         //Custom pins/Landmarks
         var landmarks: [customPin] = []
-        var landmarkTitles: [String] = ["Town Hall", "Claypit Hill", "Happy Hollow"]
-        var landmarkSubTitles: [String] = ["Capital of Wayland", "East of the Mississippi", "*Some Funny Reference*"]
-        var landmarkLocation: [CLLocationCoordinate2D] = [CLLocationCoordinate2D(latitude: 42.361400, longitude: -71.361549), CLLocationCoordinate2D(latitude: 42.373079, longitude: -71.344808), CLLocationCoordinate2D(latitude: 42.337595, longitude: -71.369744)]
+        let landmarkTitles: [String] = ["Town Hall", "Claypit Hill", "Happy Hollow"]
+        let landmarkSubTitles: [String] = ["Capital of Wayland", "East of the Mississippi", "*Some Funny Reference*"]
+        let landmarkLocation: [CLLocationCoordinate2D] = [CLLocationCoordinate2D(latitude: 42.361400, longitude: -71.361549), CLLocationCoordinate2D(latitude: 42.373079, longitude: -71.344808), CLLocationCoordinate2D(latitude: 42.337595, longitude: -71.369744)]
                         
         for n in 0...landmarkTitles.count-1 {
             landmarks.append(customPin(pinTitle: landmarkTitles[n], pinSubTitle: landmarkSubTitles[n], location: landmarkLocation[n]))
@@ -67,7 +67,7 @@ class MapViewController: UIViewController {
             }
             
             // And finally add it to your MKMapView
-            mapView.add(tileOverlay)
+        mapView.addOverlay(tileOverlay)
         }
         
     }
