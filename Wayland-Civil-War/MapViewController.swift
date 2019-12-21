@@ -39,6 +39,7 @@ class MapViewController: UIViewController {
         let region = MKCoordinateRegion(center: wayland.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius) //I set to wayland location
 
         mapView.setRegion(region, animated: true)
+        mapView.showsScale=true
 
 
         //Custom pins/Landmarks
