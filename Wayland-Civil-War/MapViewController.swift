@@ -29,17 +29,31 @@ class MapViewController: UIViewController {
 
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 
+        mapView.isUserInteractionEnabled=true
+        view.isUserInteractionEnabled=true
+
+        //ima try to make this shit 3d
+        mapView.mapType = MKMapType.standard
+        mapView.showsBuildings = true
+        let mapCamera = MKMapCamera()
+        mapCamera.centerCoordinate = mapView.userLocation.coordinate
+        mapCamera.pitch = 70
+        mapCamera.altitude = 500
+        mapCamera.heading=45
+        mapView.camera = mapCamera
         
         let wayland = CLLocation(latitude: 42.3626, longitude: -71.3614)
         let regionRadius = 2000.0
 //        let region = MKCoordinateRegion(center: mapView.userLocation.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius) //I set to user location
         let region = MKCoordinateRegion(center: wayland.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius) //I set to wayland location
 
-        mapView.setRegion(region, animated: true)
+//        mapView.setRegion(region, animated: true)
         mapView.showsScale=true
+        
 
 
         //Custom pins/Landmarks
@@ -55,7 +69,8 @@ class MapViewController: UIViewController {
         for landmark in landmarks {
             mapView.addAnnotation(landmark)
         }
-//        mapView.isScrollEnabled=false; //allow scrolling
+        mapView.isScrollEnabled=false; //disable scrolling
+        mapView.isZoomEnabled=false; //disable zooming - Instead, toggle map pitch and altitude
         
 
         if CLLocationManager.locationServicesEnabled() {
@@ -99,10 +114,12 @@ class MapViewController: UIViewController {
                 return MKOverlayRenderer(overlay: overlay)
             }
         }
+        
 }
 
 extension MapViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         mapView.setCenter(locations[0].coordinate, animated: true)
     }
+    
 }
