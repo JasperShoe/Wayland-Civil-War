@@ -26,32 +26,36 @@ class MapViewController: UIViewController {
     let locationManager = CLLocationManager()
     
     @IBOutlet weak var mapView: MKMapView!
+    let mapCamera = MKMapCamera()
 
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-
+        locationManager.requestWhenInUseAuthorization()
         mapView.isUserInteractionEnabled=true
+        
         view.isUserInteractionEnabled=true
 
+        let pinchGesture = UIPinchGestureRecognizer(target: self, action: #selector(pinch(sender: )))
+        mapView.addGestureRecognizer(pinchGesture)
+        
+        
         //ima try to make this shit 3d
         mapView.mapType = MKMapType.standard
         mapView.showsBuildings = true
-        let mapCamera = MKMapCamera()
         mapCamera.centerCoordinate = mapView.userLocation.coordinate
-        mapCamera.pitch = 70
+        mapCamera.pitch = 45
         mapCamera.altitude = 500
-        mapCamera.heading=45
-        mapView.camera = mapCamera
         
         let wayland = CLLocation(latitude: 42.3626, longitude: -71.3614)
         let regionRadius = 2000.0
 //        let region = MKCoordinateRegion(center: mapView.userLocation.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius) //I set to user location
-        let region = MKCoordinateRegion(center: wayland.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius) //I set to wayland location
+        let region = MKCoordinateRegion(center: mapView.userLocation.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius) //I set to wayland location
+        mapView.camera = mapCamera
 
-//        mapView.setRegion(region, animated: true)
+        mapView.setRegion(region, animated: true)
         mapView.showsScale=true
         
 
@@ -81,6 +85,22 @@ class MapViewController: UIViewController {
         mapView.delegate = self
         configureTileOverlay()
 
+    }
+    
+    @objc func pinch(sender: UIPinchGestureRecognizer){ //CALLED when you pinch with two fingers
+        //So these two lines are really tough - We gotta figure out how to use the input (Which tells us the distance between our fingers during the pinch) to figure out how to change the camera angle and altitude
+        var scale = sender.scale/2   //Sender.scale shows the distance between your fingers - Start adjusting aand you'll see why that makes this kinda tough...
+        
+        if (scale>1.15 && scale<2.8){
+            mapView.camera.altitude = CLLocationDistance(350/scale)
+            mapView.camera.pitch = 100/scale
+        }
+        print("Alt: ", scale*100)
+        print("Angle: ", 200/scale)
+        print("Scale: ", scale)
+//        mapView.camera = mapCamera
+
+        
     }
     
 
