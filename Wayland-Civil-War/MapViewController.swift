@@ -53,6 +53,10 @@ class MapViewController: UIViewController {
         for landmark in landmarks {
             mapView.addAnnotation(landmark)
         }
+        mapView.delegate = self
+        configureTileOverlay()
+
+
     }
     private func configureTileOverlay() {
             // We first need to have the path of the overlay configuration JSON

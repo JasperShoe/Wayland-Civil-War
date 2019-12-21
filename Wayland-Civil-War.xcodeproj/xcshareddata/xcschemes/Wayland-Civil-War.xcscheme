@@ -71,7 +71,7 @@
          </BuildableReference>
       </BuildableProductRunnable>
       <LocationScenarioReference
-         identifier = "../../Wayland-Civil-War/Game Test.gpx"
+         identifier = "../Game Test.gpx"
          referenceType = "0">
       </LocationScenarioReference>
    </LaunchAction>
