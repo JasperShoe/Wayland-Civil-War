@@ -9,6 +9,8 @@ target 'Wayland-Civil-War' do
 # Add the Firebase pod for Google Analytics
 
 pod 'Firebase/Analytics'
+pod "MapKitGoogleStyler"
+
 
 # Add the pods for any other Firebase products you want to use in your app
 # For example, to use Firebase Authentication and Cloud Firestore

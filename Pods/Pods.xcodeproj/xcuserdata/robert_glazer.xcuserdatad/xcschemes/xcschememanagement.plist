@@ -79,6 +79,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MapKitGoogleStyler.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Wayland-Civil-War-Wayland-Civil-WarUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>

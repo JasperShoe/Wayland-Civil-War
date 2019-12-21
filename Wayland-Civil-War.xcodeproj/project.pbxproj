@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,7 +11,8 @@
 		2A65DFACEF1E872D3C00A9F6 /* Pods_Wayland_Civil_War.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FEC04BFC1FBCB95769C6434 /* Pods_Wayland_Civil_War.framework */; };
 		4F463598BFD8315E637F972B /* Pods_Wayland_Civil_WarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA884F5FB2AD2F1364DD0358 /* Pods_Wayland_Civil_WarTests.framework */; };
 		6886631423ABF2E30040E200 /* LoadingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6886631323ABF2E30040E200 /* LoadingScreenViewController.swift */; };
-		6A56DE5D23AD8C29008A0C8F /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A56DE5C23AD8C29008A0C8F /* GoogleService-Info (1).plist */; };
+		6A56DE5D23AD8C29008A0C8F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A56DE5C23AD8C29008A0C8F /* GoogleService-Info.plist */; };
+		6A56DE6123ADE57E008A0C8F /* overlay.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A56DE6023ADE57E008A0C8F /* overlay.json */; };
 		75F905A8F216CF59B0E96C94 /* Pods_Wayland_Civil_War_Wayland_Civil_WarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB485629477EBE9B025D6D46 /* Pods_Wayland_Civil_War_Wayland_Civil_WarUITests.framework */; };
 		CBAEB5B323999950009F054F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEB5B223999950009F054F /* AppDelegate.swift */; };
 		CBAEB5B523999950009F054F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEB5B423999950009F054F /* SceneDelegate.swift */; };
@@ -47,7 +48,8 @@
 		588F84473667BD93B9921717 /* Pods-Wayland-Civil-WarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wayland-Civil-WarTests.debug.xcconfig"; path = "Target Support Files/Pods-Wayland-Civil-WarTests/Pods-Wayland-Civil-WarTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6886631323ABF2E30040E200 /* LoadingScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreenViewController.swift; sourceTree = "<group>"; };
 		694A90EF0511891AA1CAEF11 /* Pods-Wayland-Civil-War-Wayland-Civil-WarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wayland-Civil-War-Wayland-Civil-WarUITests.release.xcconfig"; path = "Target Support Files/Pods-Wayland-Civil-War-Wayland-Civil-WarUITests/Pods-Wayland-Civil-War-Wayland-Civil-WarUITests.release.xcconfig"; sourceTree = "<group>"; };
-		6A56DE5C23AD8C29008A0C8F /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
+		6A56DE5C23AD8C29008A0C8F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6A56DE6023ADE57E008A0C8F /* overlay.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = overlay.json; sourceTree = "<group>"; };
 		BA884F5FB2AD2F1364DD0358 /* Pods_Wayland_Civil_WarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wayland_Civil_WarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBAEB5AF23999950009F054F /* Wayland-Civil-War.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wayland-Civil-War.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBAEB5B223999950009F054F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -115,7 +117,6 @@
 				588F84473667BD93B9921717 /* Pods-Wayland-Civil-WarTests.debug.xcconfig */,
 				F4051EF0AD356524E0D0F963 /* Pods-Wayland-Civil-WarTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -144,7 +145,8 @@
 		CBAEB5B123999950009F054F /* Wayland-Civil-War */ = {
 			isa = PBXGroup;
 			children = (
-				6A56DE5C23AD8C29008A0C8F /* GoogleService-Info (1).plist */,
+				6A56DE6023ADE57E008A0C8F /* overlay.json */,
+				6A56DE5C23AD8C29008A0C8F /* GoogleService-Info.plist */,
 				CBAEB5B223999950009F054F /* AppDelegate.swift */,
 				CBAEB5B423999950009F054F /* SceneDelegate.swift */,
 				CBAEB5B623999950009F054F /* MapViewController.swift */,
@@ -284,10 +286,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A56DE6123ADE57E008A0C8F /* overlay.json in Resources */,
 				0F4F1FED23AD424C0062DFF6 /* Main.storyboard in Resources */,
 				CBAEB5BF23999953009F054F /* LaunchScreen.storyboard in Resources */,
 				CBAEB5BC23999953009F054F /* Assets.xcassets in Resources */,
-				6A56DE5D23AD8C29008A0C8F /* GoogleService-Info (1).plist in Resources */,
+				6A56DE5D23AD8C29008A0C8F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
