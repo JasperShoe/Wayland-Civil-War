@@ -31,15 +31,12 @@ class MapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        configureTileOverlay()
 
-        locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestWhenInUseAuthorization()
         
         let wayland = CLLocation(latitude: 42.3626, longitude: -71.3614)
         let regionRadius = 2000.0
-        let region = MKCoordinateRegion(center: mapView.userLocation.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
+//        let region = MKCoordinateRegion(center: mapView.userLocation.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius) //I set to user location
+        let region = MKCoordinateRegion(center: wayland.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius) //I set to wayland location
 
         mapView.setRegion(region, animated: true)
 
@@ -57,17 +54,20 @@ class MapViewController: UIViewController {
         for landmark in landmarks {
             mapView.addAnnotation(landmark)
         }
-        mapView.isScrollEnabled=false; //allow scrolling
+//        mapView.isScrollEnabled=false; //allow scrolling
         
 
         if CLLocationManager.locationServicesEnabled() {
             locationManager.delegate = self
-            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
             locationManager.startUpdatingLocation()
         }
-
+        mapView.delegate = self
+        configureTileOverlay()
 
     }
+    
+
     private func configureTileOverlay() {
             // We first need to have the path of the overlay configuration JSON
             guard let overlayFileURLString = Bundle.main.path(forResource: "overlay", ofType: "json") else {
