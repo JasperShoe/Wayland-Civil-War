@@ -26,20 +26,22 @@ class MapViewController: UIViewController {
     let locationManager = CLLocationManager()
     
     @IBOutlet weak var mapView: MKMapView!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        
         let wayland = CLLocation(latitude: 42.3626, longitude: -71.3614)
         let regionRadius = 2000.0
         let region = MKCoordinateRegion(center: wayland.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
 
         mapView.setRegion(region, animated: true)
 
-        locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestWhenInUseAuthorization()
-        
+
         //Custom pins/Landmarks
         var landmarks: [customPin] = []
         let landmarkTitles: [String] = ["Town Hall", "Claypit Hill", "Happy Hollow"]
@@ -53,7 +55,14 @@ class MapViewController: UIViewController {
         for landmark in landmarks {
             mapView.addAnnotation(landmark)
         }
-        mapView.delegate = self
+        mapView.isScrollEnabled=false; //allow scrolling
+        
+
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.startUpdatingLocation()
+        }
         configureTileOverlay()
 
 
@@ -72,6 +81,7 @@ class MapViewController: UIViewController {
             
             // And finally add it to your MKMapView
         mapView.addOverlay(tileOverlay)
+
         }
         
     }
@@ -90,5 +100,7 @@ class MapViewController: UIViewController {
 }
 
 extension MapViewController: CLLocationManagerDelegate {
-
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        mapView.setCenter(locations[0].coordinate, animated: true)
+    }
 }
