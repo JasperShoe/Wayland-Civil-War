@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gsd-J8-VrA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gsd-J8-VrA">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -112,37 +112,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="top" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="x2a-ue-k1b" userLabel="Stack View Title">
-                                <rect key="frame" x="27" y="88" width="72.5" height="719"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rally " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szl-7y-bb1">
-                                        <rect key="frame" x="0.0" y="0.0" width="44" height="180"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fv4-oS-6uC">
-                                        <rect key="frame" x="0.0" y="180" width="41" height="179.5"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekly" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMC-5e-c86">
-                                        <rect key="frame" x="0.0" y="359.5" width="60" height="180"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Treasure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8BC-kg-bIQ">
-                                        <rect key="frame" x="0.0" y="539.5" width="72.5" height="179.5"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="Dod-hL-jGg" userLabel="Stack View Rally">
-                                <rect key="frame" x="20" y="206" width="374" height="106"/>
+                                <rect key="frame" x="20" y="124" width="374" height="106"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43Z-jf-Hhq">
                                         <rect key="frame" x="0.0" y="0.0" width="96" height="106"/>
@@ -168,7 +139,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="4LA-tu-DY6" userLabel="Stack View Rally Label">
-                                <rect key="frame" x="20" y="315" width="374" height="40"/>
+                                <rect key="frame" x="20" y="233" width="374" height="40"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Basic Rally" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IF7-GF-Lna">
                                         <rect key="frame" x="0.0" y="0.0" width="124.5" height="40"/>
@@ -194,7 +165,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="KPg-TL-HQU" userLabel="Stack View ABC">
-                                <rect key="frame" x="20" y="388" width="374" height="106"/>
+                                <rect key="frame" x="20" y="304" width="374" height="106"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79E-Ha-F2c">
                                         <rect key="frame" x="0.0" y="0.0" width="96" height="106"/>
@@ -223,7 +194,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="29j-DD-0FU" userLabel="Stack View ABC label">
-                                <rect key="frame" x="20" y="494" width="374" height="40"/>
+                                <rect key="frame" x="20" y="410" width="374" height="40"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSN-Di-ejm">
                                         <rect key="frame" x="0.0" y="0.0" width="124.5" height="40"/>
@@ -249,7 +220,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="VsQ-6m-jsQ" userLabel="Stack View DEF">
-                                <rect key="frame" x="20" y="570" width="374" height="106"/>
+                                <rect key="frame" x="20" y="484" width="374" height="106"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rT-5F-Sf1">
                                         <rect key="frame" x="0.0" y="0.0" width="96" height="106"/>
@@ -278,7 +249,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="pnV-uV-zl2" userLabel="Stack View DEF label">
-                                <rect key="frame" x="20" y="676" width="374" height="40"/>
+                                <rect key="frame" x="20" y="590" width="374" height="40"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cgi-2o-3bQ">
                                         <rect key="frame" x="0.0" y="0.0" width="124.5" height="40"/>
@@ -304,7 +275,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="nDH-aG-3f9" userLabel="Stack View Price">
-                                <rect key="frame" x="20" y="751" width="374" height="106"/>
+                                <rect key="frame" x="20" y="664" width="374" height="106"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wR-su-5aU">
                                         <rect key="frame" x="0.0" y="0.0" width="96" height="106"/>
@@ -333,7 +304,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="odQ-J6-BBu" userLabel="Stack View Price Label">
-                                <rect key="frame" x="20" y="857" width="374" height="40"/>
+                                <rect key="frame" x="20" y="770" width="374" height="40"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X Gold " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r8X-Eo-uVi">
                                         <rect key="frame" x="0.0" y="0.0" width="124.5" height="40"/>
@@ -361,18 +332,16 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="VsQ-6m-jsQ" firstAttribute="top" secondItem="KPg-TL-HQU" secondAttribute="bottom" constant="76" id="0vv-vk-IbF" userLabel="Top DEF(from ABC)"/>
+                            <constraint firstItem="VsQ-6m-jsQ" firstAttribute="top" secondItem="RdD-7G-A6P" secondAttribute="top" constant="440" id="0vv-vk-IbF" userLabel="Top DEF(from safe area)"/>
                             <constraint firstItem="4LA-tu-DY6" firstAttribute="top" secondItem="Dod-hL-jGg" secondAttribute="bottom" constant="3" id="4tu-zY-3rP" userLabel="Top Rally Label(from Rally)"/>
                             <constraint firstItem="Dod-hL-jGg" firstAttribute="leading" secondItem="RdD-7G-A6P" secondAttribute="leading" constant="20" id="Aym-kD-mLK" userLabel="Leading Rally"/>
-                            <constraint firstItem="RdD-7G-A6P" firstAttribute="bottom" secondItem="x2a-ue-k1b" secondAttribute="bottom" constant="55" id="EyI-Ey-TpB" userLabel="Bottom Title"/>
                             <constraint firstItem="RdD-7G-A6P" firstAttribute="trailing" secondItem="odQ-J6-BBu" secondAttribute="trailing" constant="20" id="GVe-ao-hSV"/>
                             <constraint firstItem="VsQ-6m-jsQ" firstAttribute="leading" secondItem="RdD-7G-A6P" secondAttribute="leading" constant="20" id="Lnc-Ec-uWC" userLabel="Leading DEF"/>
-                            <constraint firstItem="KPg-TL-HQU" firstAttribute="top" secondItem="Dod-hL-jGg" secondAttribute="bottom" constant="76" id="MHN-X1-oWR" userLabel="Top ABC (from Rally)"/>
+                            <constraint firstItem="KPg-TL-HQU" firstAttribute="top" secondItem="RdD-7G-A6P" secondAttribute="top" constant="260" id="MHN-X1-oWR" userLabel="Top ABC (from safe area)"/>
                             <constraint firstItem="29j-DD-0FU" firstAttribute="top" secondItem="KPg-TL-HQU" secondAttribute="bottom" id="McN-8b-cgT" userLabel="Top ABC label(from ABC)"/>
-                            <constraint firstItem="pnV-uV-zl2" firstAttribute="leading" secondItem="RdD-7G-A6P" secondAttribute="leading" constant="20" id="TbJ-Fj-6Rb" userLabel="Leading DEF"/>
+                            <constraint firstItem="pnV-uV-zl2" firstAttribute="leading" secondItem="RdD-7G-A6P" secondAttribute="leading" constant="20" id="TbJ-Fj-6Rb" userLabel="Leading DEF label"/>
                             <constraint firstItem="4LA-tu-DY6" firstAttribute="leading" secondItem="RdD-7G-A6P" secondAttribute="leading" constant="20" id="Vu3-ct-Zob" userLabel="Leading Rally Label"/>
                             <constraint firstItem="RdD-7G-A6P" firstAttribute="trailing" secondItem="nDH-aG-3f9" secondAttribute="trailing" constant="20" id="ad3-iZ-0Kx"/>
-                            <constraint firstItem="x2a-ue-k1b" firstAttribute="top" secondItem="RdD-7G-A6P" secondAttribute="top" constant="44" id="bkW-85-7Ou" userLabel="Top Title"/>
                             <constraint firstItem="RdD-7G-A6P" firstAttribute="trailing" secondItem="Dod-hL-jGg" secondAttribute="trailing" constant="20" id="dA0-EN-6sA" userLabel="Trailing Rally"/>
                             <constraint firstAttribute="trailing" secondItem="KPg-TL-HQU" secondAttribute="trailing" constant="20" id="dYb-6W-Kv3" userLabel="Trainling ABC"/>
                             <constraint firstItem="KPg-TL-HQU" firstAttribute="leading" secondItem="RdD-7G-A6P" secondAttribute="leading" constant="20" id="fGK-Ax-DJ0" userLabel="Leading ABC"/>
@@ -381,15 +350,14 @@
                             <constraint firstItem="RdD-7G-A6P" firstAttribute="trailing" secondItem="VsQ-6m-jsQ" secondAttribute="trailing" constant="20" id="lfl-MY-bdG" userLabel="Trailing DEF"/>
                             <constraint firstItem="odQ-J6-BBu" firstAttribute="top" secondItem="nDH-aG-3f9" secondAttribute="bottom" id="lwb-iX-CtB"/>
                             <constraint firstItem="odQ-J6-BBu" firstAttribute="leading" secondItem="RdD-7G-A6P" secondAttribute="leading" constant="20" id="myq-dg-HTX"/>
-                            <constraint firstItem="nDH-aG-3f9" firstAttribute="top" secondItem="VsQ-6m-jsQ" secondAttribute="bottom" constant="75" id="o6J-Bg-iGs"/>
+                            <constraint firstItem="nDH-aG-3f9" firstAttribute="top" secondItem="RdD-7G-A6P" secondAttribute="top" constant="620" id="o6J-Bg-iGs"/>
                             <constraint firstItem="29j-DD-0FU" firstAttribute="leading" secondItem="RdD-7G-A6P" secondAttribute="leading" constant="20" id="pPK-Db-ipE" userLabel="Leading ABC label"/>
                             <constraint firstItem="yxF-CF-ew5" firstAttribute="top" secondItem="RdD-7G-A6P" secondAttribute="top" constant="25" id="rSF-3Y-d0A"/>
-                            <constraint firstItem="Dod-hL-jGg" firstAttribute="top" secondItem="Ppr-dN-wHn" secondAttribute="topMargin" constant="162" id="u46-XK-yg1" userLabel="Top Rally"/>
+                            <constraint firstItem="Dod-hL-jGg" firstAttribute="top" secondItem="Ppr-dN-wHn" secondAttribute="topMargin" constant="80" id="u46-XK-yg1" userLabel="Top Rally"/>
                             <constraint firstItem="yxF-CF-ew5" firstAttribute="centerX" secondItem="Ppr-dN-wHn" secondAttribute="centerX" id="uuT-Vm-2iY"/>
-                            <constraint firstItem="x2a-ue-k1b" firstAttribute="leading" secondItem="RdD-7G-A6P" secondAttribute="leading" constant="27" id="x7X-5Y-2Zi" userLabel="Leading Title"/>
                             <constraint firstItem="RdD-7G-A6P" firstAttribute="trailing" secondItem="4LA-tu-DY6" secondAttribute="trailing" constant="20" id="x8e-uF-uuc" userLabel="Trailing Rally Label"/>
                             <constraint firstItem="nDH-aG-3f9" firstAttribute="leading" secondItem="RdD-7G-A6P" secondAttribute="leading" constant="20" id="xEE-id-Zt9"/>
-                            <constraint firstItem="pnV-uV-zl2" firstAttribute="top" secondItem="VsQ-6m-jsQ" secondAttribute="bottom" id="xsd-Bu-Czu" userLabel="Top DEF"/>
+                            <constraint firstItem="pnV-uV-zl2" firstAttribute="top" secondItem="VsQ-6m-jsQ" secondAttribute="bottom" id="xsd-Bu-Czu" userLabel="Top DEF label"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RdD-7G-A6P"/>
                     </view>
