@@ -5,12 +5,6 @@
       location = "group:Wayland-Civil-War.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:/Users/alex_kashian/.Trash/Wayland-Civil-War .">
-   </FileRef>
-   <FileRef
-      location = "group:Pods">
-   </FileRef>
-   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
