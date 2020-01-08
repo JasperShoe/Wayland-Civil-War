@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		06829AC6D162D2618FBD25B2 /* Pods_Wayland_Civil_WarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2152C10D78C6FFE5826BDE00 /* Pods_Wayland_Civil_WarTests.framework */; };
-		0F4F1FED23AD424C0062DFF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F4F1FEC23AD424C0062DFF6 /* Main.storyboard */; };
-		0F4F1FF123B07DF70062DFF6 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4F1FF023B07DF70062DFF6 /* PopUpViewController.swift */; };
-		0F4F1FF923B133790062DFF6 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4F1FF823B133790062DFF6 /* CustomButton.swift */; };
+		0F38660223C632F20042B0CB /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3865FE23C632F10042B0CB /* CustomButton.swift */; };
+		0F38660323C632F20042B0CB /* OnOffButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3865FF23C632F10042B0CB /* OnOffButton.swift */; };
+		0F38660423C632F20042B0CB /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F38660023C632F10042B0CB /* PopUpViewController.swift */; };
+		0F38660523C632F20042B0CB /* PopUpImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F38660123C632F20042B0CB /* PopUpImage.swift */; };
+		0F38660723C633040042B0CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F38660623C633040042B0CB /* Main.storyboard */; };
 		6886631423ABF2E30040E200 /* LoadingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6886631323ABF2E30040E200 /* LoadingScreenViewController.swift */; };
 		6A56DE5D23AD8C29008A0C8F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A56DE5C23AD8C29008A0C8F /* GoogleService-Info.plist */; };
 		6A56DE6123ADE57E008A0C8F /* overlay.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A56DE6023ADE57E008A0C8F /* overlay.json */; };
@@ -44,9 +46,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0F4F1FEC23AD424C0062DFF6 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		0F4F1FF023B07DF70062DFF6 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
-		0F4F1FF823B133790062DFF6 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		0F3865FE23C632F10042B0CB /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		0F3865FF23C632F10042B0CB /* OnOffButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnOffButton.swift; sourceTree = "<group>"; };
+		0F38660023C632F10042B0CB /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		0F38660123C632F20042B0CB /* PopUpImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpImage.swift; sourceTree = "<group>"; };
+		0F38660623C633040042B0CB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		2152C10D78C6FFE5826BDE00 /* Pods_Wayland_Civil_WarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wayland_Civil_WarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		319A96B43810A725A32EB642 /* Pods-Wayland-Civil-War-Wayland-Civil-WarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wayland-Civil-War-Wayland-Civil-WarUITests.debug.xcconfig"; path = "Target Support Files/Pods-Wayland-Civil-War-Wayland-Civil-WarUITests/Pods-Wayland-Civil-War-Wayland-Civil-WarUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		41CF876C1FF16C7F216A5950 /* Pods-Wayland-Civil-War.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wayland-Civil-War.debug.xcconfig"; path = "Target Support Files/Pods-Wayland-Civil-War/Pods-Wayland-Civil-War.debug.xcconfig"; sourceTree = "<group>"; };
@@ -141,16 +145,18 @@
 		CBAEB5B123999950009F054F /* Wayland-Civil-War */ = {
 			isa = PBXGroup;
 			children = (
+				0F38660623C633040042B0CB /* Main.storyboard */,
+				0F3865FE23C632F10042B0CB /* CustomButton.swift */,
+				0F3865FF23C632F10042B0CB /* OnOffButton.swift */,
+				0F38660123C632F20042B0CB /* PopUpImage.swift */,
+				0F38660023C632F10042B0CB /* PopUpViewController.swift */,
 				6A911AD723ADEF8E00FF2ED7 /* Game Test.gpx */,
 				6A56DE6023ADE57E008A0C8F /* overlay.json */,
 				6A56DE5C23AD8C29008A0C8F /* GoogleService-Info.plist */,
 				CBAEB5B223999950009F054F /* AppDelegate.swift */,
 				CBAEB5B423999950009F054F /* SceneDelegate.swift */,
-				0F4F1FF823B133790062DFF6 /* CustomButton.swift */,
 				CBAEB5B623999950009F054F /* MapViewController.swift */,
 				6886631323ABF2E30040E200 /* LoadingScreenViewController.swift */,
-				0F4F1FEC23AD424C0062DFF6 /* Main.storyboard */,
-				0F4F1FF023B07DF70062DFF6 /* PopUpViewController.swift */,
 				CBAEB5BB23999953009F054F /* Assets.xcassets */,
 				CBAEB5BD23999953009F054F /* LaunchScreen.storyboard */,
 				CBAEB5C023999953009F054F /* Info.plist */,
@@ -296,9 +302,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A56DE6123ADE57E008A0C8F /* overlay.json in Resources */,
-				0F4F1FED23AD424C0062DFF6 /* Main.storyboard in Resources */,
 				CBAEB5BF23999953009F054F /* LaunchScreen.storyboard in Resources */,
 				CBAEB5BC23999953009F054F /* Assets.xcassets in Resources */,
+				0F38660723C633040042B0CB /* Main.storyboard in Resources */,
 				6A911AD823ADEF9400FF2ED7 /* Game Test.gpx in Resources */,
 				6A56DE5D23AD8C29008A0C8F /* GoogleService-Info.plist in Resources */,
 			);
@@ -428,12 +434,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F4F1FF123B07DF70062DFF6 /* PopUpViewController.swift in Sources */,
+				0F38660323C632F20042B0CB /* OnOffButton.swift in Sources */,
 				CBAEB5B723999950009F054F /* MapViewController.swift in Sources */,
+				0F38660523C632F20042B0CB /* PopUpImage.swift in Sources */,
+				0F38660423C632F20042B0CB /* PopUpViewController.swift in Sources */,
 				CBAEB5B323999950009F054F /* AppDelegate.swift in Sources */,
 				CBAEB5B523999950009F054F /* SceneDelegate.swift in Sources */,
 				6886631423ABF2E30040E200 /* LoadingScreenViewController.swift in Sources */,
-				0F4F1FF923B133790062DFF6 /* CustomButton.swift in Sources */,
+				0F38660223C632F20042B0CB /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
