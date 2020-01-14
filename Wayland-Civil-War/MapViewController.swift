@@ -71,19 +71,36 @@ class MapViewController: UIViewController {
         for landmark in landmarks {
             mapView.addAnnotation(landmark)
         }
+        
+        //geofence region WHS
+        let geoFenceRegion:CLCircularRegion = CLCircularRegion(center: CLLocationCoordinate2DMake(42.341907 , -71.374044), radius: 200, identifier: "WHS")
+        
+//        let circle = MKCircle(center: CLLocationCoordinate2DMake(42.341907, -71.374044), radius: 200)
+        
+        
+
 
         //User Location
         if CLLocationManager.locationServicesEnabled() {
             locationManager.delegate = self
             locationManager.desiredAccuracy = kCLLocationAccuracyBest
             locationManager.startUpdatingLocation()
+            locationManager.startMonitoring(for: geoFenceRegion)
         }
         mapView.delegate = self
         
         //Tile Overlay
         configureTileOverlay()
-
+        
     }
+    
+    
+    
+
+
+    //flagging entering/exiting region
+    
+
     
     @objc func pinch(sender: UIPinchGestureRecognizer){
         var scale = sender.scale/2
@@ -135,5 +152,10 @@ extension MapViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         mapView.setCenter(locations[0].coordinate, animated: true)
     }
-    
+    func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
+        print("Entered \(region.identifier)")
+        }
+    func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
+        print("Exited \(region.identifier)")
+    }
 }
