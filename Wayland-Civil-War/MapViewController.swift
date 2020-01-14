@@ -26,8 +26,9 @@ class MapViewController: UIViewController {
     let locationManager = CLLocationManager()
     
     @IBOutlet weak var mapView: MKMapView!
-    let mapCamera = MKMapCamera()
-
+    
+    var pitch = CGFloat(70)
+    var altitude = CLLocationDistance(200)
     
     override func viewDidLoad() {
         
@@ -41,22 +42,17 @@ class MapViewController: UIViewController {
         let pinchGesture = UIPinchGestureRecognizer(target: self, action: #selector(pinch(sender: )))
         mapView.addGestureRecognizer(pinchGesture)
         
-        //Setting Camera
+        //Setting Map
         mapView.mapType = MKMapType.standard
-        mapView.showsBuildings = true
-        mapCamera.centerCoordinate = mapView.userLocation.coordinate
-        mapCamera.pitch = 45
-        mapCamera.altitude = 500
-        mapView.camera = mapCamera
-        mapView.isScrollEnabled=false; //disable scrolling
-        mapView.isZoomEnabled=false;
+        mapView.isPitchEnabled = true
+        mapView.isRotateEnabled = true
         
-        //Setting Region
-        let wayland = CLLocation(latitude: 42.3626, longitude: -71.3614)
-        let regionRadius = 2000.0
-        let region = MKCoordinateRegion(center: mapView.userLocation.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
-        mapView.setRegion(region, animated: true)
-        mapView.showsScale=true
+        //Setting Camera
+        let mapCamera = MKMapCamera()
+        mapCamera.centerCoordinate = mapView.userLocation.coordinate
+        mapCamera.pitch = pitch
+        mapCamera.altitude = altitude
+        mapView.camera = mapCamera
         
         //Custom Pins
         var landmarks: [customPin] = []
@@ -86,15 +82,16 @@ class MapViewController: UIViewController {
     }
     
     @objc func pinch(sender: UIPinchGestureRecognizer){
-        var scale = sender.scale/2
+        var scale = sender.scale-1
         
-        if (scale>1.15 && scale<2.8){
-            mapView.camera.altitude = CLLocationDistance(350/scale)
-            mapView.camera.pitch = 100/scale
+        if(altitude >= 200 && scale > 0){
+            altitude -= CLLocationDistance(scale*5)
+        } else if(altitude <= 700 && scale < 0){
+            altitude -= CLLocationDistance(scale*10)
         }
-        print("Alt: ", scale*100)
-        print("Angle: ", 200/scale)
-        print("Scale: ", scale)
+
+        mapView.camera.altitude = altitude
+        mapView.camera.pitch = pitch
     }
     
 
