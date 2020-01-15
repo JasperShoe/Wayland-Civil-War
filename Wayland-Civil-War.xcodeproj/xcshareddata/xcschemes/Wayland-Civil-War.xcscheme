@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CBAEB5AE23999950009F054F"
-               BuildableName = "Wayland-Civil-War.app"
+               BuildableName = "Strife.app"
                BlueprintName = "Wayland-Civil-War"
                ReferencedContainer = "container:Wayland-Civil-War.xcodeproj">
             </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CBAEB5AE23999950009F054F"
-            BuildableName = "Wayland-Civil-War.app"
+            BuildableName = "Strife.app"
             BlueprintName = "Wayland-Civil-War"
             ReferencedContainer = "container:Wayland-Civil-War.xcodeproj">
          </BuildableReference>
@@ -86,7 +86,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CBAEB5AE23999950009F054F"
-            BuildableName = "Wayland-Civil-War.app"
+            BuildableName = "Strife.app"
             BlueprintName = "Wayland-Civil-War"
             ReferencedContainer = "container:Wayland-Civil-War.xcodeproj">
          </BuildableReference>
