@@ -16,6 +16,8 @@ pod 'MapKitGoogleStyler'
 # For example, to use Firebase Authentication and Cloud Firestore
 pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
+pod 'Firebase/Database'
+pod 'Mapbox-iOS-SDK', '~> 5.6'
 
   target 'Wayland-Civil-WarTests' do
     inherit! :search_paths
