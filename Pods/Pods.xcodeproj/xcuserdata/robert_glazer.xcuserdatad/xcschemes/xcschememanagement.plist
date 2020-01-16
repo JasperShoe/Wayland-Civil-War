@@ -94,16 +94,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Mapbox-iOS-SDK.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>MapboxMobileEvents.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-Wayland-Civil-War-Wayland-Civil-WarUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
