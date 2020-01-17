@@ -225,7 +225,7 @@ PODS:
     - "gRPC-C++ (= 0.0.9)"
     - leveldb-library (~> 1.22)
     - nanopb (~> 0.3.901)
-  - FirebaseInstallations (1.0.0):
+  - FirebaseInstallations (1.1.0):
     - FirebaseCore (~> 6.6)
     - GoogleUtilities/UserDefaults (~> 6.5)
     - PromisesObjC (~> 1.2)
@@ -283,7 +283,6 @@ PODS:
   - Mapbox-iOS-SDK (5.6.1):
     - MapboxMobileEvents (= 0.10.2)
   - MapboxMobileEvents (0.10.2)
-  - MapKitGoogleStyler (0.1.1)
   - nanopb (0.3.9011):
     - nanopb/decode (= 0.3.9011)
     - nanopb/encode (= 0.3.9011)
@@ -297,7 +296,6 @@ DEPENDENCIES:
   - Firebase/Database
   - Firebase/Firestore
   - Mapbox-iOS-SDK (~> 5.6)
-  - MapKitGoogleStyler
 
 SPEC REPOS:
   trunk:
@@ -324,7 +322,6 @@ SPEC REPOS:
     - leveldb-library
     - Mapbox-iOS-SDK
     - MapboxMobileEvents
-    - MapKitGoogleStyler
     - nanopb
     - PromisesObjC
 
@@ -340,7 +337,7 @@ SPEC CHECKSUMS:
   FirebaseCoreDiagnosticsInterop: 296e2c5f5314500a850ad0b83e9e7c10b011a850
   FirebaseDatabase: 0144e0706a4761f1b0e8679572eba8095ddb59be
   FirebaseFirestore: b7e6adda31974dbd259fc25b541e8850420c92ed
-  FirebaseInstallations: ae1dbf899b1f071b1f93dff78f748380bb6616d0
+  FirebaseInstallations: 575cd32f2aec0feeb0e44f5d0110a09e5e60b47b
   FirebaseInstanceID: 6668efc1655a4052c083f287a7141f1ead12f9c2
   GoogleAppMeasurement: a08a43b8677b95ed51fcef880e36737334d804fd
   GoogleDataTransport: 574a983e829327d7c18f2627f65d9e80164ea8a4
@@ -352,10 +349,9 @@ SPEC CHECKSUMS:
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   Mapbox-iOS-SDK: b31bd62a5dd5b7e688eab787acd3d093a122f4d6
   MapboxMobileEvents: 2bc0ca2eedb627b73cf403258dce2b2fa98074a6
-  MapKitGoogleStyler: 8efdceb664fc1748a62a9e3b50a34b67a34247bc
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
 
-PODFILE CHECKSUM: 49f1b930781d52a4e2b6ab9cb753b223aeb966f4
+PODFILE CHECKSUM: ec049a7531063fc07a1e8300db397451fcb45c44
 
 COCOAPODS: 1.8.4

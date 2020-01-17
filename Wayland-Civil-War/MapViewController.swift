@@ -8,7 +8,9 @@
 
 import UIKit
 import MapKit
-//import MapKitGoogleStyler
+import FirebaseDatabase
+import Firebase
+import FirebaseFirestore
 
 
 class customPin: NSObject, MKAnnotation {
@@ -23,8 +25,12 @@ class customPin: NSObject, MKAnnotation {
     }
 }
 
+
 class MapViewController: UIViewController {
+    
+    var base:DatabaseReference!
     let locationManager = CLLocationManager()
+    var numbers = [Int]()
     
     @IBOutlet weak var mapView: MKMapView!
     
@@ -32,8 +38,23 @@ class MapViewController: UIViewController {
     var altitude = CLLocationDistance(200)
     
     override func viewDidLoad() {
+
+    
+        
+
         
         super.viewDidLoad()
+        base = Database.database().reference().child("numbers")
+        base!.observe(DataEventType.value, with: {(snapshot) in
+            print("Fix 1")
+            for numbers in snapshot.children.allObjects as![DataSnapshot]{
+                print("Numbers:")
+                print(numbers.value as? [String: AnyObject])
+            }
+    print("Snapshot:")
+    print(snapshot)
+        })
+
         // Do any additional setup after loading the view.
         locationManager.requestWhenInUseAuthorization()
         mapView.isUserInteractionEnabled=true
@@ -87,7 +108,6 @@ class MapViewController: UIViewController {
         mapView.delegate = self
         
         //Tile Overlay
-        configureTileOverlay()
         
     }
     
@@ -113,36 +133,11 @@ class MapViewController: UIViewController {
     }
     
 
-    private func configureTileOverlay() {
-            // We first need to have the path of the overlay configuration JSON
-            guard let overlayFileURLString = Bundle.main.path(forResource: "overlay", ofType: "json") else {
-                    return
-            }
-            let overlayFileURL = URL(fileURLWithPath: overlayFileURLString)
-            
-            // After that, you can create the tile overlay using MapKitGoogleStyler
-            guard let tileOverlay = try? MapKitGoogleStyler.buildOverlay(with: overlayFileURL) else {
-                return
-            }
-            
-            // And finally add it to your MKMapView
-        mapView.addOverlay(tileOverlay)
-
-        }
         
     }
 
     extension MapViewController: MKMapViewDelegate {
-        func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
-            // This is the final step. This code can be copied and pasted into your project
-            // without thinking on it so much. It simply instantiates a MKTileOverlayRenderer
-            // for displaying the tile overlay.
-            if let tileOverlay = overlay as? MKTileOverlay {
-                return MKTileOverlayRenderer(tileOverlay: tileOverlay)
-            } else {
-                return MKOverlayRenderer(overlay: overlay)
-            }
-        }
+        
         
 }
 
