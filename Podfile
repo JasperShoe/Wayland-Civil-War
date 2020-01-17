@@ -17,7 +17,7 @@ pod 'MapKitGoogleStyler'
 pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
 pod 'Firebase/Database'
-# pod 'Mapbox-iOS-SDK', '~> 5.6'
+pod 'Mapbox-iOS-SDK', '~> 5.6'
 
   target 'Wayland-Civil-WarTests' do
     inherit! :search_paths

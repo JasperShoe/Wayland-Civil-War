@@ -8,7 +8,8 @@
 
 import UIKit
 import MapKit
-import MapKitGoogleStyler
+//import MapKitGoogleStyler
+
 
 class customPin: NSObject, MKAnnotation {
     var coordinate: CLLocationCoordinate2D

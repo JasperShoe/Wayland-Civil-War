@@ -280,6 +280,9 @@ PODS:
   - gRPC-Core/Interface (1.21.0)
   - GTMSessionFetcher/Core (1.3.1)
   - leveldb-library (1.22)
+  - Mapbox-iOS-SDK (5.6.1):
+    - MapboxMobileEvents (= 0.10.2)
+  - MapboxMobileEvents (0.10.2)
   - MapKitGoogleStyler (0.1.1)
   - nanopb (0.3.9011):
     - nanopb/decode (= 0.3.9011)
@@ -293,6 +296,7 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Database
   - Firebase/Firestore
+  - Mapbox-iOS-SDK (~> 5.6)
   - MapKitGoogleStyler
 
 SPEC REPOS:
@@ -318,6 +322,8 @@ SPEC REPOS:
     - gRPC-Core
     - GTMSessionFetcher
     - leveldb-library
+    - Mapbox-iOS-SDK
+    - MapboxMobileEvents
     - MapKitGoogleStyler
     - nanopb
     - PromisesObjC
@@ -344,10 +350,12 @@ SPEC CHECKSUMS:
   gRPC-Core: c9aef9a261a1247e881b18059b84d597293c9947
   GTMSessionFetcher: cea130bbfe5a7edc8d06d3f0d17288c32ffe9925
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
+  Mapbox-iOS-SDK: b31bd62a5dd5b7e688eab787acd3d093a122f4d6
+  MapboxMobileEvents: 2bc0ca2eedb627b73cf403258dce2b2fa98074a6
   MapKitGoogleStyler: 8efdceb664fc1748a62a9e3b50a34b67a34247bc
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
 
-PODFILE CHECKSUM: c4eff77b844ca8ce0651042902e14fd7e6ae4df1
+PODFILE CHECKSUM: 49f1b930781d52a4e2b6ab9cb753b223aeb966f4
 
 COCOAPODS: 1.8.4
