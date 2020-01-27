@@ -13,8 +13,8 @@
 		0F38660423C632F20042B0CB /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F38660023C632F10042B0CB /* PopUpViewController.swift */; };
 		0F38660723C633040042B0CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F38660623C633040042B0CB /* Main.storyboard */; };
 		0F38661123D15B430042B0CB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F38661023D15B430042B0CB /* ProfileViewController.swift */; };
-		0F38661723D8AEF10042B0CB /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F38661623D8AEF00042B0CB /* ShopViewController.swift */; };
 		0F38661923D8BC0C0042B0CB /* CardViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F38661823D8BC0C0042B0CB /* CardViewViewController.swift */; };
+		0F38661B23DF5F350042B0CB /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F38661A23DF5F350042B0CB /* ShopViewController.swift */; };
 		6886631423ABF2E30040E200 /* LoadingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6886631323ABF2E30040E200 /* LoadingScreenViewController.swift */; };
 		6A56DE5D23AD8C29008A0C8F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A56DE5C23AD8C29008A0C8F /* GoogleService-Info.plist */; };
 		6A56DE6123ADE57E008A0C8F /* overlay.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A56DE6023ADE57E008A0C8F /* overlay.json */; };
@@ -53,8 +53,8 @@
 		0F38660023C632F10042B0CB /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		0F38660623C633040042B0CB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0F38661023D15B430042B0CB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		0F38661623D8AEF00042B0CB /* ShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShopViewController.swift; path = ../../../.Trash/ShopViewController.swift; sourceTree = "<group>"; };
 		0F38661823D8BC0C0042B0CB /* CardViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewViewController.swift; sourceTree = "<group>"; };
+		0F38661A23DF5F350042B0CB /* ShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		2152C10D78C6FFE5826BDE00 /* Pods_Wayland_Civil_WarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wayland_Civil_WarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		319A96B43810A725A32EB642 /* Pods-Wayland-Civil-War-Wayland-Civil-WarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wayland-Civil-War-Wayland-Civil-WarUITests.debug.xcconfig"; path = "Target Support Files/Pods-Wayland-Civil-War-Wayland-Civil-WarUITests/Pods-Wayland-Civil-War-Wayland-Civil-WarUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		41CF876C1FF16C7F216A5950 /* Pods-Wayland-Civil-War.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wayland-Civil-War.debug.xcconfig"; path = "Target Support Files/Pods-Wayland-Civil-War/Pods-Wayland-Civil-War.debug.xcconfig"; sourceTree = "<group>"; };
@@ -157,6 +157,7 @@
 				6A56DE6023ADE57E008A0C8F /* overlay.json */,
 				6A56DE5C23AD8C29008A0C8F /* GoogleService-Info.plist */,
 				CBAEB5B223999950009F054F /* AppDelegate.swift */,
+				0F38661A23DF5F350042B0CB /* ShopViewController.swift */,
 				CBAEB5B423999950009F054F /* SceneDelegate.swift */,
 				CBAEB5B623999950009F054F /* MapViewController.swift */,
 				6886631323ABF2E30040E200 /* LoadingScreenViewController.swift */,
@@ -164,7 +165,6 @@
 				CBAEB5BD23999953009F054F /* LaunchScreen.storyboard */,
 				CBAEB5C023999953009F054F /* Info.plist */,
 				0F38661023D15B430042B0CB /* ProfileViewController.swift */,
-				0F38661623D8AEF00042B0CB /* ShopViewController.swift */,
 				0F38661823D8BC0C0042B0CB /* CardViewViewController.swift */,
 			);
 			path = "Wayland-Civil-War";
@@ -442,7 +442,7 @@
 			files = (
 				0F38660323C632F20042B0CB /* OnOffButton.swift in Sources */,
 				CBAEB5B723999950009F054F /* MapViewController.swift in Sources */,
-				0F38661723D8AEF10042B0CB /* ShopViewController.swift in Sources */,
+				0F38661B23DF5F350042B0CB /* ShopViewController.swift in Sources */,
 				0F38661123D15B430042B0CB /* ProfileViewController.swift in Sources */,
 				0F38660423C632F20042B0CB /* PopUpViewController.swift in Sources */,
 				CBAEB5B323999950009F054F /* AppDelegate.swift in Sources */,
