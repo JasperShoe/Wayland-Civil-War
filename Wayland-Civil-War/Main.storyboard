@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="s30-lV-lch">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="s30-lV-lch">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -1705,52 +1705,11 @@
                                     <constraint firstAttribute="height" constant="184" id="PAY-37-0LG"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uCh-qt-tbT">
-                                <rect key="frame" x="82" y="431" width="250" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hgT-nK-vSa">
-                                <rect key="frame" x="82" y="516" width="250" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="8HF-Ei-cYo"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbN-nw-fuz">
-                                <rect key="frame" x="82" y="608" width="250" height="75"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Login">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <state key="selected">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <segue destination="s30-lV-lch" kind="presentation" id="cyz-vl-8ao"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="KwU-1N-BAM" firstAttribute="trailing" secondItem="uCh-qt-tbT" secondAttribute="trailing" id="0GG-YH-sPC"/>
-                            <constraint firstItem="rGO-BH-xLn" firstAttribute="bottom" secondItem="rbN-nw-fuz" secondAttribute="bottom" constant="179" id="1Ya-ZN-qD9"/>
-                            <constraint firstItem="hgT-nK-vSa" firstAttribute="trailing" secondItem="rbN-nw-fuz" secondAttribute="trailing" id="C8O-Bg-z2B"/>
-                            <constraint firstItem="uCh-qt-tbT" firstAttribute="trailing" secondItem="hgT-nK-vSa" secondAttribute="trailing" id="E7C-6P-4GL"/>
-                            <constraint firstItem="KwU-1N-BAM" firstAttribute="leading" secondItem="uCh-qt-tbT" secondAttribute="leading" id="GdM-nc-AyC"/>
-                            <constraint firstItem="uCh-qt-tbT" firstAttribute="centerY" secondItem="HxS-nh-HrZ" secondAttribute="centerY" id="Uwo-kf-179"/>
                             <constraint firstItem="KwU-1N-BAM" firstAttribute="centerX" secondItem="HxS-nh-HrZ" secondAttribute="centerX" id="WNw-KT-xNL"/>
                             <constraint firstItem="KwU-1N-BAM" firstAttribute="top" secondItem="rGO-BH-xLn" secondAttribute="top" constant="89" id="WRd-6I-IrO"/>
-                            <constraint firstItem="uCh-qt-tbT" firstAttribute="leading" secondItem="hgT-nK-vSa" secondAttribute="leading" id="bUC-Ju-oGw"/>
-                            <constraint firstItem="rbN-nw-fuz" firstAttribute="top" secondItem="hgT-nK-vSa" secondAttribute="bottom" constant="58" id="e1O-NM-1g1"/>
-                            <constraint firstItem="hgT-nK-vSa" firstAttribute="top" secondItem="uCh-qt-tbT" secondAttribute="bottom" constant="51" id="oj9-j5-6by"/>
-                            <constraint firstItem="hgT-nK-vSa" firstAttribute="leading" secondItem="rbN-nw-fuz" secondAttribute="leading" id="sj9-4i-Gnv"/>
                             <constraint firstItem="KwU-1N-BAM" firstAttribute="leading" secondItem="rGO-BH-xLn" secondAttribute="leading" constant="82" id="ujk-SC-u35"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rGO-BH-xLn"/>
