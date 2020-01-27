@@ -29,6 +29,7 @@ class OnOffButton: UIButton {
         
         setTitleColor(UIColor.white, for: .normal)
         addTarget(self, action: #selector(OnOffButton.buttonPressed), for: .touchUpInside)
+        activateButton(bool: !isOn)
     }
     
     @objc func buttonPressed() {

@@ -10,21 +10,32 @@ import UIKit
 
 class PopUpViewController: UIViewController {
     
-    @IBOutlet weak var popupView: UIView!
+    
+    @IBOutlet weak var popUpView: UIView?
+    
+    @IBOutlet weak var popUpImage: UIImageView?
+    
     @IBOutlet weak var CancelButton: CustomButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        popupView.layer.cornerRadius = 40
-        popupView.layer.masksToBounds = true
-
+        
+        popUpView?.layer.cornerRadius = 40
+        popUpView?.layer.masksToBounds = true
     }
     
 
-
     @IBAction func CancelPurchase(_ sender: Any) {
-        self.view.removeFromSuperview()
+        dismiss(animated: true, completion: nil)
         CancelButton.shake()
     }
     
+   
+    var myimage = UIImage()
+    override func viewWillAppear(_ animated: Bool) {
+        self.popUpImage?.image = myimage
+    }
+
 }
+    
+

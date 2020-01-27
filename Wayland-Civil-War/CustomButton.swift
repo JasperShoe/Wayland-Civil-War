@@ -26,7 +26,7 @@ class CustomButton : UIButton{
             setTitleColor(.white, for: .normal)
             backgroundColor      = UIColor.red
                 
-            //titleLabel?.font     = UIFont(name: "AvenirNext-DemiBold", size: 15)
+            titleLabel?.font     = UIFont(name: "AvenirNext-DemiBold", size: 15)
             layer.cornerRadius   = 25
             layer.borderWidth    = 3.0
             layer.borderColor    = UIColor.darkGray.cgColor
