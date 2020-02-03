@@ -11,6 +11,7 @@ import MapKit
 import FirebaseDatabase
 import Firebase
 import FirebaseFirestore
+import Mapbox
 
 
 class customPin: NSObject, MKAnnotation {

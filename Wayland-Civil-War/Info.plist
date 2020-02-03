@@ -16,6 +16,33 @@
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>googleSignIn</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>&lt;?xml</string>
+				<string>version="1.0"</string>
+				<string>encoding="UTF-8"?&gt;
+&lt;!DOCTYPE</string>
+				<string>plist</string>
+				<string>PUBLIC</string>
+				<string>"-//Apple//DTD</string>
+				<string>PLIST</string>
+				<string>1.0//EN"</string>
+				<string>"http://www.apple.com/DTDs/PropertyList-1.0.dtd"&gt;
+&lt;plist</string>
+				<string>version="1.0"&gt;
+&lt;string&gt;com.googleusercontent.apps.1021897382992-tppuqim8n1odqmb0bt9av7r5000130b7&lt;/string&gt;
+&lt;/plist&gt;
+</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
