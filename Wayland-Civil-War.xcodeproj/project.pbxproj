@@ -150,22 +150,22 @@
 			isa = PBXGroup;
 			children = (
 				0F38660623C633040042B0CB /* Main.storyboard */,
+				CBAEB5BD23999953009F054F /* LaunchScreen.storyboard */,
+				CBAEB5B223999950009F054F /* AppDelegate.swift */,
 				0F3865FE23C632F10042B0CB /* CustomButton.swift */,
 				0F3865FF23C632F10042B0CB /* OnOffButton.swift */,
 				0F38660023C632F10042B0CB /* PopUpViewController.swift */,
-				6A911AD723ADEF8E00FF2ED7 /* Game Test.gpx */,
-				6A56DE6023ADE57E008A0C8F /* overlay.json */,
-				6A56DE5C23AD8C29008A0C8F /* GoogleService-Info.plist */,
-				CBAEB5B223999950009F054F /* AppDelegate.swift */,
 				0F38661A23DF5F350042B0CB /* ShopViewController.swift */,
 				CBAEB5B423999950009F054F /* SceneDelegate.swift */,
 				CBAEB5B623999950009F054F /* MapViewController.swift */,
 				6886631323ABF2E30040E200 /* LoadingScreenViewController.swift */,
-				CBAEB5BB23999953009F054F /* Assets.xcassets */,
-				CBAEB5BD23999953009F054F /* LaunchScreen.storyboard */,
-				CBAEB5C023999953009F054F /* Info.plist */,
 				0F38661023D15B430042B0CB /* ProfileViewController.swift */,
 				0F38661823D8BC0C0042B0CB /* CardViewViewController.swift */,
+				6A911AD723ADEF8E00FF2ED7 /* Game Test.gpx */,
+				6A56DE6023ADE57E008A0C8F /* overlay.json */,
+				6A56DE5C23AD8C29008A0C8F /* GoogleService-Info.plist */,
+				CBAEB5C023999953009F054F /* Info.plist */,
+				CBAEB5BB23999953009F054F /* Assets.xcassets */,
 			);
 			path = "Wayland-Civil-War";
 			sourceTree = "<group>";
@@ -210,6 +210,7 @@
 				CBAEB5AC23999950009F054F /* Frameworks */,
 				CBAEB5AD23999950009F054F /* Resources */,
 				F34D9DF9AE8EAAE903BAEBF2 /* [CP] Embed Pods Frameworks */,
+				10B4DB22A36C34C4A7088631 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -248,6 +249,7 @@
 				CBAEB5CD23999953009F054F /* Frameworks */,
 				CBAEB5CE23999953009F054F /* Resources */,
 				C97F72C32AED2FF3439C0EE2 /* [CP] Embed Pods Frameworks */,
+				50D088A448FF817DC3CDE63E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -333,6 +335,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		10B4DB22A36C34C4A7088631 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wayland-Civil-War/Pods-Wayland-Civil-War-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wayland-Civil-War/Pods-Wayland-Civil-War-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wayland-Civil-War/Pods-Wayland-Civil-War-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3DBB09187F0DF403D901B512 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -375,6 +394,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50D088A448FF817DC3CDE63E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wayland-Civil-War-Wayland-Civil-WarUITests/Pods-Wayland-Civil-War-Wayland-Civil-WarUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wayland-Civil-War-Wayland-Civil-WarUITests/Pods-Wayland-Civil-War-Wayland-Civil-WarUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wayland-Civil-War-Wayland-Civil-WarUITests/Pods-Wayland-Civil-War-Wayland-Civil-WarUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9F2D02FEC20A6EDFCF5C606A /* [CP] Check Pods Manifest.lock */ = {
