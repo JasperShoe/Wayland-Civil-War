@@ -11,12 +11,14 @@ target 'Wayland-Civil-War' do
 pod 'Firebase/Analytics'
 
 
+
 # Add the pods for any other Firebase products you want to use in your app
 # For example, to use Firebase Authentication and Cloud Firestore
 pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
 pod 'Firebase/Database'
 pod 'Mapbox-iOS-SDK', '~> 5.6'
+pod 'GoogleSignIn'
 
   target 'Wayland-Civil-WarTests' do
     inherit! :search_paths

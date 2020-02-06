@@ -23,6 +23,5 @@ class MapViewController: UIViewController, MGLMapViewDelegate {
         mapView.setUserTrackingMode(.follow, animated: true)
         camera.pitch = 60
         mapView.setCamera(camera, animated: true)
-
     }
 }
