@@ -1,0 +1,6 @@
+framework module Pods_leveldb_library {
+  umbrella header "Pods-leveldb-library-umbrella.h"
+
+  export *
+  module * { export * }
+}

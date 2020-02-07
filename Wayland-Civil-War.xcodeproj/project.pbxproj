@@ -20,6 +20,7 @@
 		6A56DE6123ADE57E008A0C8F /* overlay.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A56DE6023ADE57E008A0C8F /* overlay.json */; };
 		6A911AD823ADEF9400FF2ED7 /* Game Test.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 6A911AD723ADEF8E00FF2ED7 /* Game Test.gpx */; };
 		844FC822BBA76AE87553D8EE /* Pods_Wayland_Civil_War.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 935C2707242005713C5EA5FF /* Pods_Wayland_Civil_War.framework */; };
+		8707453F23E9C1C800A98769 /* SignInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8707453E23E9C1C800A98769 /* SignInScreen.swift */; };
 		CBAEB5B323999950009F054F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEB5B223999950009F054F /* AppDelegate.swift */; };
 		CBAEB5B523999950009F054F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEB5B423999950009F054F /* SceneDelegate.swift */; };
 		CBAEB5B723999950009F054F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAEB5B623999950009F054F /* MapViewController.swift */; };
@@ -63,6 +64,7 @@
 		6A56DE6023ADE57E008A0C8F /* overlay.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = overlay.json; sourceTree = "<group>"; };
 		6A911AD723ADEF8E00FF2ED7 /* Game Test.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Game Test.gpx"; sourceTree = SOURCE_ROOT; };
 		77C0789A2ACB66164554133C /* Pods-Wayland-Civil-WarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wayland-Civil-WarTests.release.xcconfig"; path = "Target Support Files/Pods-Wayland-Civil-WarTests/Pods-Wayland-Civil-WarTests.release.xcconfig"; sourceTree = "<group>"; };
+		8707453E23E9C1C800A98769 /* SignInScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreen.swift; sourceTree = "<group>"; };
 		935C2707242005713C5EA5FF /* Pods_Wayland_Civil_War.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wayland_Civil_War.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B05833378A493FC519981CDB /* Pods_Wayland_Civil_War_Wayland_Civil_WarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wayland_Civil_War_Wayland_Civil_WarUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBAEB5AF23999950009F054F /* Strife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Strife.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,6 +152,8 @@
 			isa = PBXGroup;
 			children = (
 				0F38660623C633040042B0CB /* Main.storyboard */,
+				8707453E23E9C1C800A98769 /* SignInScreen.swift */,
+				0F38661023D15B430042B0CB /* ProfileViewController.swift */,
 				CBAEB5BD23999953009F054F /* LaunchScreen.storyboard */,
 				CBAEB5B223999950009F054F /* AppDelegate.swift */,
 				0F3865FE23C632F10042B0CB /* CustomButton.swift */,
@@ -159,7 +163,6 @@
 				CBAEB5B423999950009F054F /* SceneDelegate.swift */,
 				CBAEB5B623999950009F054F /* MapViewController.swift */,
 				6886631323ABF2E30040E200 /* LoadingScreenViewController.swift */,
-				0F38661023D15B430042B0CB /* ProfileViewController.swift */,
 				0F38661823D8BC0C0042B0CB /* CardViewViewController.swift */,
 				6A911AD723ADEF8E00FF2ED7 /* Game Test.gpx */,
 				6A56DE6023ADE57E008A0C8F /* overlay.json */,
@@ -479,6 +482,7 @@
 				0F38660323C632F20042B0CB /* OnOffButton.swift in Sources */,
 				CBAEB5B723999950009F054F /* MapViewController.swift in Sources */,
 				0F38661B23DF5F350042B0CB /* ShopViewController.swift in Sources */,
+				8707453F23E9C1C800A98769 /* SignInScreen.swift in Sources */,
 				0F38661123D15B430042B0CB /* ProfileViewController.swift in Sources */,
 				0F38660423C632F20042B0CB /* PopUpViewController.swift in Sources */,
 				CBAEB5B323999950009F054F /* AppDelegate.swift in Sources */,
@@ -652,7 +656,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7FLDQJ799N;
+				DEVELOPMENT_TEAM = SN4622MCZZ;
 				INFOPLIST_FILE = "Wayland-Civil-War/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -660,6 +664,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Strife-hacs.HACS";
 				PRODUCT_NAME = Strife;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -671,7 +676,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7FLDQJ799N;
+				DEVELOPMENT_TEAM = SN4622MCZZ;
 				INFOPLIST_FILE = "Wayland-Civil-War/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -679,6 +684,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Strife-hacs.HACS";
 				PRODUCT_NAME = Strife;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
