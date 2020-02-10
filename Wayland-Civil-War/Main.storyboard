@@ -85,7 +85,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showsScale" value="NO"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="styleURL__" value="mapbox://styles/remersong/ck6b1lwte02no1ipfj3tdk5d0"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="minimumZoomLevel">
-                                        <real key="value" value="18"/>
+                                        <real key="value" value="17"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="maximumZoomLevel">
                                         <real key="value" value="22"/>
