@@ -123,6 +123,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MGLMapView
         playerModelNode.geometry?.firstMaterial?.diffuse.contents = UIColor(red: 0.118, green: 0.196, blue: 0.471, alpha: 1.0)
         playerModelNode.geometry?.firstMaterial?.specular.contents = UIColor.white
         playerNode.addChildNode(playerModelNode)
+
         scene.rootNode.addChildNode(playerNode)
         
         // office node
