@@ -1,0 +1,6 @@
+framework module Pods_gRPC_C__ {
+  umbrella header "Pods-gRPC-C++-umbrella.h"
+
+  export *
+  module * { export * }
+}
