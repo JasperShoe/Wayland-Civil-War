@@ -66,6 +66,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MGLMapView
         mapView.allowsRotating = true
         mapView.allowsTilting = false
         mapView.allowsZooming = true
+        mapView.isUserInteractionEnabled = true
+        sceneView.isUserInteractionEnabled = false
         
         // disable built-in controls and user location
         mapView.displayHeadingCalibration = false
@@ -303,8 +305,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MGLMapView
         let point = recognizer.location(in: sceneView)
         let hitTestResults = sceneView.hitTest(point, options: [SCNHitTestOption.firstFoundOnly : true])
         if hitTestResults.count > 0 {
+            print("Count:" , hitTestResults.count)
             let node = hitTestResults.first!.node
             if node == officeNode {
+                print("OfficeNode")
                 officeNode.setValue(true, forKey: "tapped")
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.2, execute: {
                     self.officeNode.setValue(false, forKey: "tapped")
