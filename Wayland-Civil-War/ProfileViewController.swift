@@ -17,7 +17,15 @@ class ProfileViewController: UIViewController,UINavigationControllerDelegate,UII
     @IBOutlet weak var userNameTag: UILabel!
     @IBOutlet weak var camera: UIButton!
     
+<<<<<<< HEAD
+    @IBOutlet weak var cancelButton: UIButton!
+=======
+<<<<<<< HEAD
+    @IBOutlet weak var cancelButton: UIButton!
+=======
      var ref:DatabaseReference?
+>>>>>>> master
+>>>>>>> 54c38beb35f65354f04713d3deb82f8b7deaf820
     
    @IBAction func importImage(_ sender: Any) {
        let image = UIImagePickerController()
@@ -58,7 +66,22 @@ class ProfileViewController: UIViewController,UINavigationControllerDelegate,UII
         camera.layer.cornerRadius = camera.frame.height/2
         camera.clipsToBounds = true
         self.camera.backgroundColor = UIColor.lightGray
+<<<<<<< HEAD
         
+        cancelButton.layer.borderColor = UIColor.black.cgColor
+        cancelButton.tintColor = .red
+        cancelButton.layer.cornerRadius = 10
+        cancelButton.clipsToBounds = true
+       
+=======
+        
+<<<<<<< HEAD
+        cancelButton.layer.borderColor = UIColor.black.cgColor
+        cancelButton.tintColor = .red
+        cancelButton.layer.cornerRadius = 10
+        cancelButton.clipsToBounds = true
+       
+=======
         ref = Database.database().reference()
         
         if let curUser = Auth.auth().currentUser?.uid {
@@ -81,7 +104,12 @@ class ProfileViewController: UIViewController,UINavigationControllerDelegate,UII
         } catch let signOutError as NSError {
             print ("Error signing out: %@", signOutError)
         }
+>>>>>>> master
+>>>>>>> 54c38beb35f65354f04713d3deb82f8b7deaf820
     }
     
+    @IBAction func Cancel(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     
 }
