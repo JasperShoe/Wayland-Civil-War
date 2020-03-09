@@ -16,6 +16,19 @@
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>googleSignIn</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.1021897382992-tppuqim8n1odqmb0bt9av7r5000130b7</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
@@ -64,5 +77,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>MGLMapboxAccessToken</key>
+	<string>pk.eyJ1IjoicmVtZXJzb25nIiwiYSI6ImNrNTdob3g1MDA0NGgzbW8zajdqZm9uOWcifQ.XpMBjdWodlmri7n_4FI4wA</string>
+	<key>MGLMapboxMetricsEnabledSettingShownInApp</key>
+	<true/>
 </dict>
 </plist>
