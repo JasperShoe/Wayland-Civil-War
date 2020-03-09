@@ -15,6 +15,10 @@
 		0F38661123D15B430042B0CB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F38661023D15B430042B0CB /* ProfileViewController.swift */; };
 		0F38661923D8BC0C0042B0CB /* CardViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F38661823D8BC0C0042B0CB /* CardViewViewController.swift */; };
 		0F38661B23DF5F350042B0CB /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F38661A23DF5F350042B0CB /* ShopViewController.swift */; };
+		0F38661D23E2106D0042B0CB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F38661C23E2106D0042B0CB /* SettingsViewController.swift */; };
+		0F38661F23E8A4CE0042B0CB /* InventoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F38661E23E8A4CE0042B0CB /* InventoryViewController.swift */; };
+		0F38662123EA03E50042B0CB /* CrateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F38662023EA03E40042B0CB /* CrateViewController.swift */; };
+		0F38662323F200970042B0CB /* NotificationSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F38662223F200960042B0CB /* NotificationSettingsViewController.swift */; };
 		6886631423ABF2E30040E200 /* LoadingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6886631323ABF2E30040E200 /* LoadingScreenViewController.swift */; };
 		6A56DE5D23AD8C29008A0C8F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A56DE5C23AD8C29008A0C8F /* GoogleService-Info.plist */; };
 		6A56DE6123ADE57E008A0C8F /* overlay.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A56DE6023ADE57E008A0C8F /* overlay.json */; };
@@ -55,6 +59,10 @@
 		0F38661023D15B430042B0CB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		0F38661823D8BC0C0042B0CB /* CardViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewViewController.swift; sourceTree = "<group>"; };
 		0F38661A23DF5F350042B0CB /* ShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		0F38661C23E2106D0042B0CB /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		0F38661E23E8A4CE0042B0CB /* InventoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryViewController.swift; sourceTree = "<group>"; };
+		0F38662023EA03E40042B0CB /* CrateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrateViewController.swift; sourceTree = "<group>"; };
+		0F38662223F200960042B0CB /* NotificationSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSettingsViewController.swift; sourceTree = "<group>"; };
 		2152C10D78C6FFE5826BDE00 /* Pods_Wayland_Civil_WarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wayland_Civil_WarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		319A96B43810A725A32EB642 /* Pods-Wayland-Civil-War-Wayland-Civil-WarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wayland-Civil-War-Wayland-Civil-WarUITests.debug.xcconfig"; path = "Target Support Files/Pods-Wayland-Civil-War-Wayland-Civil-WarUITests/Pods-Wayland-Civil-War-Wayland-Civil-WarUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		41CF876C1FF16C7F216A5950 /* Pods-Wayland-Civil-War.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wayland-Civil-War.debug.xcconfig"; path = "Target Support Files/Pods-Wayland-Civil-War/Pods-Wayland-Civil-War.debug.xcconfig"; sourceTree = "<group>"; };
@@ -150,9 +158,11 @@
 			isa = PBXGroup;
 			children = (
 				0F38660623C633040042B0CB /* Main.storyboard */,
+				0F38662223F200960042B0CB /* NotificationSettingsViewController.swift */,
 				0F3865FE23C632F10042B0CB /* CustomButton.swift */,
 				0F3865FF23C632F10042B0CB /* OnOffButton.swift */,
 				0F38660023C632F10042B0CB /* PopUpViewController.swift */,
+				0F38662023EA03E40042B0CB /* CrateViewController.swift */,
 				6A911AD723ADEF8E00FF2ED7 /* Game Test.gpx */,
 				6A56DE6023ADE57E008A0C8F /* overlay.json */,
 				6A56DE5C23AD8C29008A0C8F /* GoogleService-Info.plist */,
@@ -165,7 +175,9 @@
 				CBAEB5BD23999953009F054F /* LaunchScreen.storyboard */,
 				CBAEB5C023999953009F054F /* Info.plist */,
 				0F38661023D15B430042B0CB /* ProfileViewController.swift */,
+				0F38661E23E8A4CE0042B0CB /* InventoryViewController.swift */,
 				0F38661823D8BC0C0042B0CB /* CardViewViewController.swift */,
+				0F38661C23E2106D0042B0CB /* SettingsViewController.swift */,
 			);
 			path = "Wayland-Civil-War";
 			sourceTree = "<group>";
@@ -441,7 +453,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F38660323C632F20042B0CB /* OnOffButton.swift in Sources */,
+				0F38661F23E8A4CE0042B0CB /* InventoryViewController.swift in Sources */,
 				CBAEB5B723999950009F054F /* MapViewController.swift in Sources */,
+				0F38661D23E2106D0042B0CB /* SettingsViewController.swift in Sources */,
+				0F38662323F200970042B0CB /* NotificationSettingsViewController.swift in Sources */,
+				0F38662123EA03E50042B0CB /* CrateViewController.swift in Sources */,
 				0F38661B23DF5F350042B0CB /* ShopViewController.swift in Sources */,
 				0F38661123D15B430042B0CB /* ProfileViewController.swift in Sources */,
 				0F38660423C632F20042B0CB /* PopUpViewController.swift in Sources */,
@@ -622,7 +638,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Strife-hacs.HACS";
+				PRODUCT_BUNDLE_IDENTIFIER = "HACS-Wayland.strife";
 				PRODUCT_NAME = Strife;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -641,7 +657,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Strife-hacs.HACS";
+				PRODUCT_BUNDLE_IDENTIFIER = "HACS-Wayland.strife";
 				PRODUCT_NAME = Strife;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

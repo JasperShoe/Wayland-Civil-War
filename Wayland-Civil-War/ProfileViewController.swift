@@ -14,6 +14,8 @@ class ProfileViewController: UIViewController,UINavigationControllerDelegate,UII
     
     @IBOutlet weak var camera: UIButton!
     
+    @IBOutlet weak var cancelButton: UIButton!
+    
    @IBAction func importImage(_ sender: Any) {
        let image = UIImagePickerController()
        image.delegate = self
@@ -49,9 +51,16 @@ class ProfileViewController: UIViewController,UINavigationControllerDelegate,UII
         camera.layer.cornerRadius = camera.frame.height/2
         camera.clipsToBounds = true
         self.camera.backgroundColor = UIColor.lightGray
-       
         
+        cancelButton.layer.borderColor = UIColor.black.cgColor
+        cancelButton.tintColor = .red
+        cancelButton.layer.cornerRadius = 10
+        cancelButton.clipsToBounds = true
+       
     }
     
+    @IBAction func Cancel(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     
 }

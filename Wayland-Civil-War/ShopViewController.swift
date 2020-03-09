@@ -10,10 +10,15 @@ import UIKit
 
 class ShopViewController: UIViewController {
 
+    @IBOutlet weak var cancelButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        cancelButton.layer.borderColor = UIColor.black.cgColor
+        cancelButton.tintColor = .red
+        cancelButton.layer.cornerRadius = 10
+        cancelButton.clipsToBounds = true
+    
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -38,6 +43,11 @@ class ShopViewController: UIViewController {
                }
 
     }
-
+    
+    
+    @IBAction func Cancel(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 
 }
