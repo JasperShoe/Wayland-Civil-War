@@ -1,6 +1,0 @@
-framework module Pods_FirebaseInstanceID {
-  umbrella header "Pods-FirebaseInstanceID-umbrella.h"
-
-  export *
-  module * { export * }
-}

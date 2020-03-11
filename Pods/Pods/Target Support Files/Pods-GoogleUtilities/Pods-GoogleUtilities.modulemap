@@ -1,6 +1,0 @@
-framework module Pods_GoogleUtilities {
-  umbrella header "Pods-GoogleUtilities-umbrella.h"
-
-  export *
-  module * { export * }
-}

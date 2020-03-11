@@ -1,6 +1,0 @@
-framework module Pods_PromisesObjC {
-  umbrella header "Pods-PromisesObjC-umbrella.h"
-
-  export *
-  module * { export * }
-}
