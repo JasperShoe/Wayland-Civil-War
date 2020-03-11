@@ -120,9 +120,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MGLMapView
         
         // player node
         playerNode = SCNNode()
-        let playerScene = SCNScene(named: "player.scn")!
+        let playerScene = SCNScene(named: "shape5.scn")!
         let playerModelNode = playerScene.rootNode.childNodes.first!
-//        playerModelNode.geometry?.firstMaterial?.diffuse.contents = UIColor(red: 0.118, green: 0.196, blue: 0.471, alpha: 1.0)
+        playerModelNode.geometry?.firstMaterial?.diffuse.contents = UIColor(red: 0.118, green: 0.196, blue: 0.471, alpha: 1.0)
         playerModelNode.geometry?.firstMaterial?.specular.contents = UIColor.white
         playerNode.addChildNode(playerModelNode)
 
@@ -304,8 +304,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MGLMapView
     @objc func onMapViewTapped(recognizer: UITapGestureRecognizer) {
         let point = recognizer.location(in: sceneView)
         let hitTestResults = sceneView.hitTest(point, options: [SCNHitTestOption.firstFoundOnly : true])
+        print("Count:" , hitTestResults.count)
         if hitTestResults.count > 0 {
-            print("Count:" , hitTestResults.count)
             let node = hitTestResults.first!.node
             if node == officeNode {
                 print("OfficeNode")
