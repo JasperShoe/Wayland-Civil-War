@@ -180,6 +180,13 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MGLMapView
                                       pitch: CGFloat(MapViewController.kMapPitchDegrees), heading: heading)
             mapView.setCamera(camera, withDuration: (immediately ? 0 : 0.5), animationTimingFunction: nil)
         }
+        let mapPitchRads = Float(mapView.camera.pitch) * (Float.pi / 180.0)
+
+        let playerPoint = coordinateToOverlayPosition(coordinate: lastLocation!.coordinate)
+        let scaleMat = SCNMatrix4MakeScale(4.0, 4.0, 4.0)
+        playerNode.transform = SCNMatrix4Mult(scaleMat,
+                                              SCNMatrix4Mult(SCNMatrix4MakeRotation(-mapPitchRads, 1, 0, 0),
+                                                             SCNMatrix4MakeTranslation(playerPoint.x, playerPoint.y, 0)))
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {

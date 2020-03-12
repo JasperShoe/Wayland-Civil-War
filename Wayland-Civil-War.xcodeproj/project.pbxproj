@@ -19,6 +19,8 @@
 		6A56DE5D23AD8C29008A0C8F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A56DE5C23AD8C29008A0C8F /* GoogleService-Info.plist */; };
 		6A56DE6123ADE57E008A0C8F /* overlay.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A56DE6023ADE57E008A0C8F /* overlay.json */; };
 		6A911AD823ADEF9400FF2ED7 /* Game Test.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 6A911AD723ADEF8E00FF2ED7 /* Game Test.gpx */; };
+		6AAC9414241930E70054A18F /* MickeyMouse.dae in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC9413241930E70054A18F /* MickeyMouse.dae */; };
+		6AAC9416241931090054A18F /* MickeyMouse.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6AAC9415241931090054A18F /* MickeyMouse.scn */; };
 		6AFE0D762416C642002C6623 /* Bricks.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6AFE0D752416C642002C6623 /* Bricks.jpg */; };
 		6AFE0D7A2417D081002C6623 /* shape5.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6AFE0D792417D081002C6623 /* shape5.scn */; };
 		844FC822BBA76AE87553D8EE /* Pods_Wayland_Civil_War.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 935C2707242005713C5EA5FF /* Pods_Wayland_Civil_War.framework */; };
@@ -67,6 +69,8 @@
 		6A56DE5C23AD8C29008A0C8F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6A56DE6023ADE57E008A0C8F /* overlay.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = overlay.json; sourceTree = "<group>"; };
 		6A911AD723ADEF8E00FF2ED7 /* Game Test.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Game Test.gpx"; sourceTree = SOURCE_ROOT; };
+		6AAC9413241930E70054A18F /* MickeyMouse.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = MickeyMouse.dae; path = ../../../MickeyMouse.dae; sourceTree = "<group>"; };
+		6AAC9415241931090054A18F /* MickeyMouse.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = MickeyMouse.scn; path = ../../../MickeyMouse.scn; sourceTree = "<group>"; };
 		6AFE0D752416C642002C6623 /* Bricks.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Bricks.jpg; path = ../../../../Downloads/Bricks.jpg; sourceTree = "<group>"; };
 		6AFE0D792417D081002C6623 /* shape5.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = shape5.scn; sourceTree = "<group>"; };
 		77C0789A2ACB66164554133C /* Pods-Wayland-Civil-WarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wayland-Civil-WarTests.release.xcconfig"; path = "Target Support Files/Pods-Wayland-Civil-WarTests/Pods-Wayland-Civil-WarTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -175,6 +179,8 @@
 				0F38661823D8BC0C0042B0CB /* CardViewViewController.swift */,
 				6A911AD723ADEF8E00FF2ED7 /* Game Test.gpx */,
 				6A56DE6023ADE57E008A0C8F /* overlay.json */,
+				6AAC9413241930E70054A18F /* MickeyMouse.dae */,
+				6AAC9415241931090054A18F /* MickeyMouse.scn */,
 				6A56DE5C23AD8C29008A0C8F /* GoogleService-Info.plist */,
 				CBAEB5C023999953009F054F /* Info.plist */,
 				6AFE0D752416C642002C6623 /* Bricks.jpg */,
@@ -330,8 +336,10 @@
 				CBAEB5BC23999953009F054F /* Assets.xcassets in Resources */,
 				0F38660723C633040042B0CB /* Main.storyboard in Resources */,
 				CBCACD5B23F733CE0053DB66 /* player.scn in Resources */,
+				6AAC9416241931090054A18F /* MickeyMouse.scn in Resources */,
 				6A911AD823ADEF9400FF2ED7 /* Game Test.gpx in Resources */,
 				6A56DE5D23AD8C29008A0C8F /* GoogleService-Info.plist in Resources */,
+				6AAC9414241930E70054A18F /* MickeyMouse.dae in Resources */,
 				6AFE0D762416C642002C6623 /* Bricks.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
